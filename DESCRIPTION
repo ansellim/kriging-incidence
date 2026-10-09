@@ -1,0 +1,9 @@
+Package: krigingincidence
+Title: Reproducible Kriging Analysis of Singapore Case Counts
+Version: 1.0.0
+Authors@R: person("Ansel", "Lim", role = c("aut", "cre"))
+Description: Variogram selection, ordinary kriging, spatial diagnostics,
+    and two-facility placement using a 30-site educational dataset.
+Imports: sf, gstat, spdep, dplyr, tidyr, purrr, ggplot2, ggspatial,
+    ggrepel, patchwork, units, knitr, rmarkdown
+Encoding: UTF-8

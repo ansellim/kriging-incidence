@@ -1,0 +1,16 @@
+{
+  "center_pair_ranking.csv": "840aae62f2cf2b56a79535780250b1ef79630fd9b650c4e4f3cc80825b0dbfa0",
+  "center_shortlist.csv": "8f28fe332737ceb8d4ab4dab83ace4b8cf28f3772f52c8a8d167128c421164fc",
+  "exceedance_map_vs_simulation.csv": "31d3e6dce52a6042965458d6d91511a1d38755464da4c800ef677671edb97f1a",
+  "high_risk_zones.csv": "a331932f7bbdb493b706fe3378ffe227d6f7123bfafb7db089c71d35eed05842",
+  "intervention_centers.csv": "78ae0f3f2e0b42d36f32d32c0f9718fc91efe5fd397d8524fe41ecde349ac39d",
+  "kriging_grid.csv": "2230bc0af40d4821ff392a140cf18c82f1853ff7a3468efd2a42e529b2db3896",
+  "moran_tests.csv": "3f177b9acc9a29026f33d68edaf2a9d94aa276164be9487d6f3ada892ed7aa05",
+  "sensitivity.csv": "f973cc8321778dddff9e39185c9f13bd01e6b8afa20d9c7002af41ca68647975",
+  "summary_statistics.csv": "68e62b8c4550db2476759145407889cd79e3b0b1f80a9c45d72ed1807a3354a6",
+  "variogram_bin_settings.csv": "c76ca4c354d797694ed4f3c93429a4c89e61a772a7bdd1339fb3b87d17a78fff",
+  "variogram_candidates_cv.csv": "d30bdce385d7410e85eb019773cc124e61f7173ec7360d290524bb58449bcdaa",
+  "variogram_fit_attempts.csv": "d87e14d4badc52eee64ce8ed3f2fb635c404a02a0cf132f5fa97cad7d7838a6f",
+  "variogram_tuning.csv": "6f94cc6efcd240c98564186207af1490a0ab37ece5b2138439c2c6b2b62b6496",
+  "week5_ols_tests.csv": "ebce325973bfdcfa3f8b49b9ce62f9dc27cedf08abd197b2bce0c3c9dcd81883"
+}

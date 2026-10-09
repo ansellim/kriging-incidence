@@ -1,0 +1,12 @@
+# Preserve cached inputs and vendor sources exactly as obtained.
+data/raw/* -whitespace
+data/cache/* -whitespace
+references/chicago-author-date.csl -whitespace
+renv/activate.R -whitespace
+outputs/sessionInfo.txt -whitespace
+
+# Binary exports embed their figure assets.
+*.pdf binary
+*.docx binary
+*.png binary
+*.rds binary

@@ -1,0 +1,721 @@
+"width","cutoff","bins","min_pairs","model","method","start","start_nugget","start_psill","start_range_m","nugget","psill","range_m","singular","warning","clean"
+1000,8000,8,6,"Sph",1,"sensible",1.5,1.5,6000,1.65661036603725,0.861451077364021,8972.15110428997,FALSE,"",TRUE
+1000,8000,8,6,"Sph",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1000,8000,8,6,"Sph",1,"range too long",1.5,1.5,60000,1.65661036603725,0.861422158667184,8971.83026780665,FALSE,"",TRUE
+1000,8000,8,6,"Sph",1,"nugget equals sill",2.9,0.1,6000,1.65661036603725,0.861447676038912,8972.11279365414,FALSE,"",TRUE
+1000,8000,8,6,"Sph",2,"sensible",1.5,1.5,6000,1.77906994704125,1.66479340175147,25000.9500122875,FALSE,"",TRUE
+1000,8000,8,6,"Sph",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1000,8000,8,6,"Sph",2,"range too long",1.5,1.5,60000,1.68957571458174,0.890572001388935,10182.1381704752,FALSE,"",TRUE
+1000,8000,8,6,"Sph",2,"nugget equals sill",2.9,0.1,6000,1.66555433535813,0.861578428932725,9175.77304660057,FALSE,"",TRUE
+1000,8000,8,6,"Sph",7,"sensible",1.5,1.5,6000,1.68253782062134,0.781503518668699,8059.58939320825,FALSE,"",TRUE
+1000,8000,8,6,"Sph",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1000,8000,8,6,"Sph",7,"range too long",1.5,1.5,60000,1.50318418744988,0.739867800673112,28172.0868677788,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,8000,8,6,"Sph",7,"nugget equals sill",2.9,0.1,6000,1.68253782062134,0.781523906510397,8059.81936035733,FALSE,"",TRUE
+1000,8000,8,6,"Exp",1,"sensible",1.5,1.5,6000,1.72080624445192,2.90982587527561,70439.4537666337,FALSE,"",TRUE
+1000,8000,8,6,"Exp",1,"range too short",1.5,1.5,600,0,2.28412659944278,1273.86547119143,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,8000,8,6,"Exp",1,"range too long",1.5,1.5,60000,1.72051584780487,2.89913332387983,70123.2067724961,FALSE,"",TRUE
+1000,8000,8,6,"Exp",1,"nugget equals sill",2.9,0.1,6000,1.72020163371891,2.88650057986567,69744.6625950131,FALSE,"",TRUE
+1000,8000,8,6,"Exp",2,"sensible",1.5,1.5,6000,1.76824212731638,12.9079488774635,375852.13614051,FALSE,"",TRUE
+1000,8000,8,6,"Exp",2,"range too short",1.5,1.5,600,0,2.28432273084074,1288.29706449552,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,8000,8,6,"Exp",2,"range too long",1.5,1.5,60000,1.75795244760235,46.3453202393465,1347537.85347278,FALSE,"",TRUE
+1000,8000,8,6,"Exp",2,"nugget equals sill",2.9,0.1,6000,1.72352467844003,3.00866906161439,73585.7736532485,FALSE,"",TRUE
+1000,8000,8,6,"Exp",7,"sensible",1.5,1.5,6000,0,2.21197898370043,1293.32478753978,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,8000,8,6,"Exp",7,"range too short",1.5,1.5,600,0.292807703858107,2.70648863577772,506.833192130886,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,8000,8,6,"Exp",7,"range too long",1.5,1.5,60000,0,2.21186027575036,1292.97734761112,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,8000,8,6,"Exp",7,"nugget equals sill",2.9,0.1,6000,1.19775018631899,1.66068786889199,713.387582277493,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,8000,8,6,"Gau",1,"sensible",1.5,1.5,6000,1.82571793423141,0.865034722201288,9354.87087921942,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,8000,8,6,"Gau",1,"range too short",1.5,1.5,600,1.49999908465172,1.50000091534814,599.999801690595,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+1000,8000,8,6,"Gau",1,"range too long",1.5,1.5,60000,1.92674072736081,0.719685802381752,11422.72879981,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,8000,8,6,"Gau",1,"nugget equals sill",2.9,0.1,6000,1.8226757077498,0.869317272125764,9033.58388970753,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,8000,8,6,"Gau",2,"sensible",1.5,1.5,6000,1.91430227462021,1.08268435563089,14085.9207716093,FALSE,"",TRUE
+1000,8000,8,6,"Gau",2,"range too short",1.5,1.5,600,1.49999789724486,1.5000021027545,599.99954444195,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+1000,8000,8,6,"Gau",2,"range too long",1.5,1.5,60000,1.85079837463797,0.847468904983527,10321.7512032216,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,8000,8,6,"Gau",2,"nugget equals sill",2.9,0.1,6000,1.85418709185034,0.837060528557148,10329.4145385446,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,8000,8,6,"Gau",7,"sensible",1.5,1.5,6000,0.94376178932812,1.26950648907969,977.852510026225,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,8000,8,6,"Gau",7,"range too short",1.5,1.5,600,1.49999860851197,1.50000139148784,599.999698535086,TRUE,"singular model in variogram fit",FALSE
+1000,8000,8,6,"Gau",7,"range too long",1.5,1.5,60000,1.04184312134864,1.06659989346834,1030.41380066908,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,8000,8,6,"Gau",7,"nugget equals sill",2.9,0.1,6000,2.63221883406541,0.263231003266838,1281.89344986259,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,9000,9,6,"Sph",1,"sensible",1.5,1.5,6000,1.81369942680737,7.62757011880215,111435.193038817,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,9000,9,6,"Sph",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1000,9000,9,6,"Sph",1,"range too long",1.5,1.5,60000,1.50126210996675,2.27209654267231,90382.1881611629,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,9000,9,6,"Sph",1,"nugget equals sill",2.9,0.1,6000,2.53810430756595,2.03756431750673,69815.1671711534,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,9000,9,6,"Sph",2,"sensible",1.5,1.5,6000,1.86237310718713,5.89708003721128,90567.2606602125,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,9000,9,6,"Sph",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1000,9000,9,6,"Sph",2,"range too long",1.5,1.5,60000,1.50119284620806,2.23578247777345,88998.3812645291,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,9000,9,6,"Sph",2,"nugget equals sill",2.9,0.1,6000,2.54940330919137,1.93747660685974,67943.2111774519,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,9000,9,6,"Sph",7,"sensible",1.5,1.5,6000,1.69926327491783,1.39483143966359,16393.1233254618,FALSE,"",TRUE
+1000,9000,9,6,"Sph",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1000,9000,9,6,"Sph",7,"range too long",1.5,1.5,60000,1.69926327491783,1.39510456228589,16396.3780977729,FALSE,"",TRUE
+1000,9000,9,6,"Sph",7,"nugget equals sill",2.9,0.1,6000,1.69926327491783,1.39510917922098,16396.4166047416,FALSE,"",TRUE
+1000,9000,9,6,"Exp",1,"sensible",1.5,1.5,6000,1.85576298078174,30.1639546337106,797559.197729274,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,9000,9,6,"Exp",1,"range too short",1.5,1.5,600,0,2.38282110045738,1670.14422038853,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,9000,9,6,"Exp",1,"range too long",1.5,1.5,60000,1.55153611233943,12.9204222056117,555577.019439223,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,9000,9,6,"Exp",1,"nugget equals sill",2.9,0.1,6000,2.80264553315682,0.428446097776139,51347.7557263977,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,9000,9,6,"Exp",2,"sensible",1.5,1.5,6000,1.84965217019573,28.0571212983242,742658.10818805,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,9000,9,6,"Exp",2,"range too short",1.5,1.5,600,0,2.38237633765354,1651.96336663775,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,9000,9,6,"Exp",2,"range too long",1.5,1.5,60000,1.54856292595075,11.3628167491721,494555.568513104,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,9000,9,6,"Exp",2,"nugget equals sill",2.9,0.1,6000,2.80257584859266,0.428982890493551,51417.007623288,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,9000,9,6,"Exp",7,"sensible",1.5,1.5,6000,0,2.23745407236568,1327.38993433347,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,9000,9,6,"Exp",7,"range too short",1.5,1.5,600,0.218167153609167,2.78109916478586,503.311613086412,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,9000,9,6,"Exp",7,"range too long",1.5,1.5,60000,0,2.23762193460092,1327.89095543347,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,9000,9,6,"Exp",7,"nugget equals sill",2.9,0.1,6000,0,2.23759069752531,1327.79766247393,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,9000,9,6,"Gau",1,"sensible",1.5,1.5,6000,1.88428543953917,1.64322386460899,16957.5087154954,FALSE,"",TRUE
+1000,9000,9,6,"Gau",1,"range too short",1.5,1.5,600,1.49999792379016,1.50000207620907,599.999550194945,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+1000,9000,9,6,"Gau",1,"range too long",1.5,1.5,60000,1.88414284697753,1.6456381900404,16968.0245739367,FALSE,"",TRUE
+1000,9000,9,6,"Gau",1,"nugget equals sill",2.9,0.1,6000,1.88413528567159,1.64576653374256,16968.5852217282,FALSE,"",TRUE
+1000,9000,9,6,"Gau",2,"sensible",1.5,1.5,6000,1.93080294879884,4.15437952383536,30760.9163600427,FALSE,"",TRUE
+1000,9000,9,6,"Gau",2,"range too short",1.5,1.5,600,1.49999936401767,1.50000063598216,599.999862215588,TRUE,"singular model in variogram fit",FALSE
+1000,9000,9,6,"Gau",2,"range too long",1.5,1.5,60000,1.88380692614826,1.64478688713945,16954.2798940775,FALSE,"",TRUE
+1000,9000,9,6,"Gau",2,"nugget equals sill",2.9,0.1,6000,1.88701021694094,1.69656197846333,17375.084040938,FALSE,"",TRUE
+1000,9000,9,6,"Gau",7,"sensible",1.5,1.5,6000,0.888247505647438,1.3929378276257,962.022097111558,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,9000,9,6,"Gau",7,"range too short",1.5,1.5,600,1.49999977736935,1.50000022263064,599.999951767109,TRUE,"singular model in variogram fit",FALSE
+1000,9000,9,6,"Gau",7,"range too long",1.5,1.5,60000,0.883257941561993,1.43277255072083,970.318774539417,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,9000,9,6,"Gau",7,"nugget equals sill",2.9,0.1,6000,2.51971005170959,0.343479155430622,1188.49064993054,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,10000,10,6,"Sph",1,"sensible",1.5,1.5,6000,1.76203811993104,12.2644115977688,166298.98415982,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,10000,10,6,"Sph",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1000,10000,10,6,"Sph",1,"range too long",1.5,1.5,60000,1.50294422408044,2.92867493245291,114837.169388996,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,10000,10,6,"Sph",1,"nugget equals sill",2.9,0.1,6000,2.41074380148241,3.99067410957762,110224.267729406,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,10000,10,6,"Sph",2,"sensible",1.5,1.5,6000,1.82024344741309,8.58916526576184,123478.637757549,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,10000,10,6,"Sph",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1000,10000,10,6,"Sph",2,"range too long",1.5,1.5,60000,1.50259164150867,2.78101135037246,109478.217475698,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,10000,10,6,"Sph",2,"nugget equals sill",2.9,0.1,6000,2.42733476598697,3.74403675987876,106269.159444422,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,10000,10,6,"Sph",7,"sensible",1.5,1.5,6000,1.70176108301242,1.79486385726929,21518.7215939159,FALSE,"",TRUE
+1000,10000,10,6,"Sph",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1000,10000,10,6,"Sph",7,"range too long",1.5,1.5,60000,1.70176108301242,1.79950190535964,21574.9297313165,FALSE,"",TRUE
+1000,10000,10,6,"Sph",7,"nugget equals sill",2.9,0.1,6000,1.70176108301242,1.79952739634862,21575.300507668,FALSE,"",TRUE
+1000,10000,10,6,"Exp",1,"sensible",1.5,1.5,6000,1.82696654722591,49.693091767608,1320936.42421468,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,10000,10,6,"Exp",1,"range too short",1.5,1.5,600,0,2.63094890103676,5434.11012219254,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,10000,10,6,"Exp",1,"range too long",1.5,1.5,60000,1.56968588019116,22.8435112224682,933035.183465063,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,10000,10,6,"Exp",1,"nugget equals sill",2.9,0.1,6000,2.77364060141459,0.569033691981876,63320.935088826,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,10000,10,6,"Exp",2,"sensible",1.5,1.5,6000,1.83445365866393,40.9851494520818,1097071.59826848,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,10000,10,6,"Exp",2,"range too short",1.5,1.5,600,0,2.62481687133179,5336.20717065057,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,10000,10,6,"Exp",2,"range too long",1.5,1.5,60000,1.56371371571252,17.9540307380818,754968.336551729,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,10000,10,6,"Exp",2,"nugget equals sill",2.9,0.1,6000,2.77429696009631,0.566387808927721,63176.3462818103,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,10000,10,6,"Exp",7,"sensible",1.5,1.5,6000,1.65994421268714,1.6540249810854,28302.8709219821,FALSE,"",TRUE
+1000,10000,10,6,"Exp",7,"range too short",1.5,1.5,600,0.160484883659791,2.8387588068314,500.690242944146,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,10000,10,6,"Exp",7,"range too long",1.5,1.5,60000,1.66137265149187,1.68774185757197,29183.3205168955,FALSE,"",TRUE
+1000,10000,10,6,"Exp",7,"nugget equals sill",2.9,0.1,6000,1.65998523823399,1.65499502757853,28328.187621216,FALSE,"",TRUE
+1000,10000,10,6,"Gau",1,"sensible",1.5,1.5,6000,1.8785080932769,1.46415714624961,15627.2953147273,FALSE,"",TRUE
+1000,10000,10,6,"Gau",1,"range too short",1.5,1.5,600,1.49999677653848,1.50000322345947,599.999301655253,TRUE,"singular model in variogram fit",FALSE
+1000,10000,10,6,"Gau",1,"range too long",1.5,1.5,60000,1.87847086706755,1.464430281319,15627.8205841393,FALSE,"",TRUE
+1000,10000,10,6,"Gau",1,"nugget equals sill",2.9,0.1,6000,1.87848572283986,1.46432126305288,15627.6103309241,FALSE,"",TRUE
+1000,10000,10,6,"Gau",2,"sensible",1.5,1.5,6000,1.92053693950774,2.07263529845212,20751.783330905,FALSE,"",TRUE
+1000,10000,10,6,"Gau",2,"range too short",1.5,1.5,600,1.49999940764649,1.50000059235338,599.999871667709,TRUE,"singular model in variogram fit",FALSE
+1000,10000,10,6,"Gau",2,"range too long",1.5,1.5,60000,1.87847929156639,1.46839953330646,15657.5984002925,FALSE,"",TRUE
+1000,10000,10,6,"Gau",2,"nugget equals sill",2.9,0.1,6000,1.88078798736748,1.48357580428934,15823.7493103097,FALSE,"",TRUE
+1000,10000,10,6,"Gau",7,"sensible",1.5,1.5,6000,0.876211227163261,1.44047471210379,954.5471129537,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,10000,10,6,"Gau",7,"range too short",1.5,1.5,600,1.49998807693219,1.50001192306535,599.997416899821,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+1000,10000,10,6,"Gau",7,"range too long",1.5,1.5,60000,0.928392377484514,1.38154580072658,966.811716596451,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,10000,10,6,"Gau",7,"nugget equals sill",2.9,0.1,6000,2.36518098864907,0.454064215600749,1117.3519023325,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Sph",1,"sensible",1.5,1.5,6000,1.87427219353833,5.17981547020494,59240.6378497551,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Sph",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1000,11000,11,6,"Sph",1,"range too long",1.5,1.5,60000,1.50023477503844,1.6852774571573,67474.0047128495,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Sph",1,"nugget equals sill",2.9,0.1,6000,2.84429405970465,0.30126348301613,23346.1679169544,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Sph",2,"sensible",1.5,1.5,6000,1.84757154251556,5.4861672198509,61356.0666133075,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Sph",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1000,11000,11,6,"Sph",2,"range too long",1.5,1.5,60000,1.50023905122093,1.69589944291225,67894.9309871638,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Sph",2,"nugget equals sill",2.9,0.1,6000,2.84412849532616,0.301896525992336,23371.8713729105,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Sph",7,"sensible",1.5,1.5,6000,1.73569988487995,7.69919690291387,88243.0739001597,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Sph",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1000,11000,11,6,"Sph",7,"range too long",1.5,1.5,60000,1.50036209123351,1.90989921667407,76263.9508434623,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Sph",7,"nugget equals sill",2.9,0.1,6000,2.67974171125965,1.10325330371569,44921.1810676583,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Exp",1,"sensible",1.5,1.5,6000,2.01233233679381,7.21612921002819,172141.046758868,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Exp",1,"range too short",1.5,1.5,600,0,3.91237555703509,16164.6929619675,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Exp",1,"range too long",1.5,1.5,60000,1.52161647516699,3.41739188864177,154253.243265581,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Exp",1,"nugget equals sill",2.9,0.1,6000,2.90495704765329,0.110452075178591,13005.2329667004,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Exp",2,"sensible",1.5,1.5,6000,1.95017628407998,9.09423018171698,206049.292864308,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Exp",2,"range too short",1.5,1.5,600,0,3.8996049764336,16044.592843958,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Exp",2,"range too long",1.5,1.5,60000,1.52175437337824,3.65555429058564,164752.297341312,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Exp",2,"nugget equals sill",2.9,0.1,6000,2.90461029662221,0.11110664131734,13090.9082863253,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Exp",7,"sensible",1.5,1.5,6000,1.71223362618962,37.4815910789359,803710.933863012,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Exp",7,"range too short",1.5,1.5,600,0,2.31114039415161,1427.32040436104,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Exp",7,"range too long",1.5,1.5,60000,1.53143441480095,11.4740253900458,467742.640115733,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Exp",7,"nugget equals sill",2.9,0.1,6000,2.53970152302364,3.60175838214757,202126.719040359,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Gau",1,"sensible",1.5,1.5,6000,2.35970030636796,53670.0932091412,2148773.8284705,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Gau",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1000,11000,11,6,"Gau",1,"range too long",1.5,1.5,60000,2.35969835280377,64874.3911949427,2361312.01740125,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Gau",1,"nugget equals sill",2.9,0.1,6000,2.71852130398306,14.5908445947236,83332.1535585362,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Gau",2,"sensible",1.5,1.5,6000,2.20963284769668,37946.4388778468,1911279.26788333,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Gau",2,"range too short",1.5,1.5,600,1.49999003512465,1.50000996487012,599.997841222143,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+1000,11000,11,6,"Gau",2,"range too long",1.5,1.5,60000,2.32507535483689,59398.1933155712,2301103.40746152,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Gau",2,"nugget equals sill",2.9,0.1,6000,2.35185636095599,302.151994402304,176270.188735424,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1000,11000,11,6,"Gau",7,"sensible",1.5,1.5,6000,1.7899253954504,1.66835127831683,13511.1493262138,FALSE,"",TRUE
+1000,11000,11,6,"Gau",7,"range too short",1.5,1.5,600,1.4999995644388,1.50000043556114,599.999905635976,TRUE,"singular model in variogram fit",FALSE
+1000,11000,11,6,"Gau",7,"range too long",1.5,1.5,60000,1.78991686789782,1.66872254022517,13513.0038408515,FALSE,"",TRUE
+1000,11000,11,6,"Gau",7,"nugget equals sill",2.9,0.1,6000,1.78992500475952,1.66836828652148,13511.2342839533,FALSE,"",TRUE
+1500,8000,6,10,"Sph",1,"sensible",1.5,1.5,6000,1.9155996084898,0.445680956795706,7519.62144606774,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Sph",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1500,8000,6,10,"Sph",1,"range too long",1.5,1.5,60000,1.50028922621871,1.1934464408779,47513.6129017374,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Sph",1,"nugget equals sill",2.9,0.1,6000,1.90577422896345,0.449772038412821,7461.61451423976,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Sph",2,"sensible",1.5,1.5,6000,2.18934381892596,0.975188381821344,49210.2888825069,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Sph",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1500,8000,6,10,"Sph",2,"range too long",1.5,1.5,60000,1.50184910734095,0.953410721093699,37632.1152554557,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Sph",2,"nugget equals sill",2.9,0.1,6000,1.85635089386505,0.469546602048687,5910.10199151987,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Sph",7,"sensible",1.5,1.5,6000,2.01231244221858,2.81528265268617,33712.1300662329,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Sph",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1500,8000,6,10,"Sph",7,"range too long",1.5,1.5,60000,1.50005763580963,1.55943087248488,62404.7003134211,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Sph",7,"nugget equals sill",2.9,0.1,6000,2.90346092271179,0.125542376814995,13572.8535400745,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Exp",1,"sensible",1.5,1.5,6000,1.95156516966283,2.05763247654719,88061.9817946593,FALSE,"",TRUE
+1500,8000,6,10,"Exp",1,"range too short",1.5,1.5,600,1.5218066245847,1.47819319499669,602.005724990508,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Exp",1,"range too long",1.5,1.5,60000,1.94392265869456,1.50685751752703,60175.8481944805,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Exp",1,"nugget equals sill",2.9,0.1,6000,2.87517417477202,0.168102724075004,29834.7139210091,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Exp",2,"sensible",1.5,1.5,6000,2.14807214506717,7.25482215840146,253825.703997687,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Exp",2,"range too short",1.5,1.5,600,1.52180675475557,1.47819306482344,602.005737084541,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Exp",2,"range too long",1.5,1.5,60000,1.57970627020319,10.1983144659416,496244.687330126,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Exp",2,"nugget equals sill",2.9,0.1,6000,2.88352071228586,0.151485666181197,26919.5419162967,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Exp",7,"sensible",1.5,1.5,6000,2.09846849273193,3.41352120167468,78447.6568774789,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Exp",7,"range too short",1.5,1.5,600,1.5235178199367,1.47648195296309,602.164733639172,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Exp",7,"range too long",1.5,1.5,60000,1.51211540879355,2.30136449437015,99997.61490337,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Exp",7,"nugget equals sill",2.9,0.1,6000,2.91342028972465,0.0950496612184823,10960.3965580479,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Gau",1,"sensible",1.5,1.5,6000,2.01114525984181,0.598315941655255,11837.9284270498,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Gau",1,"range too short",1.5,1.5,600,1.49991276721907,1.50006616936702,598.591400364015,TRUE,"singular model in variogram fit",FALSE
+1500,8000,6,10,"Gau",1,"range too long",1.5,1.5,60000,2.00614486447502,0.600380270391906,11503.9565391114,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Gau",1,"nugget equals sill",2.9,0.1,6000,2.00070547793641,0.57460844496836,9975.88671321896,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Gau",2,"sensible",1.5,1.5,6000,2.49427055423503,59028.4324353571,2441224.85766928,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Gau",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1500,8000,6,10,"Gau",2,"range too long",1.5,1.5,60000,1.967261556743,0.631443268568555,8040.27949598379,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Gau",2,"nugget equals sill",2.9,0.1,6000,1.99007468373105,0.600859569986721,9054.91433670493,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Gau",7,"sensible",1.5,1.5,6000,3.2379332090231,156209.972323119,2292652.05929907,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Gau",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1500,8000,6,10,"Gau",7,"range too long",1.5,1.5,60000,3.23793382020862,216138.196079886,2694337.47303481,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,8000,6,10,"Gau",7,"nugget equals sill",2.9,0.1,6000,2.91026967751214,0.115696951319622,15172.5181719027,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,9000,6,10,"Sph",1,"sensible",1.5,1.5,6000,1.85016791987488,1.3970976239005,22155.0163494564,FALSE,"",TRUE
+1500,9000,6,10,"Sph",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1500,9000,6,10,"Sph",1,"range too long",1.5,1.5,60000,1.85016791987488,1.3971092409543,22155.2018647536,FALSE,"",TRUE
+1500,9000,6,10,"Sph",1,"nugget equals sill",2.9,0.1,6000,1.85016791987488,1.39710903507939,22155.1970087425,FALSE,"",TRUE
+1500,9000,6,10,"Sph",2,"sensible",1.5,1.5,6000,2.09453390972104,3.14089954902092,61364.2646147071,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,9000,6,10,"Sph",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1500,9000,6,10,"Sph",2,"range too long",1.5,1.5,60000,1.50585730761186,3.05395920434577,120587.147011347,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,9000,6,10,"Sph",2,"nugget equals sill",2.9,0.1,6000,1.86806885019015,4.08684702401375,69017.2577826226,FALSE,"",TRUE
+1500,9000,6,10,"Sph",7,"sensible",1.5,1.5,6000,2.04575770909708,2.76716577503347,36702.0475063567,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,9000,6,10,"Sph",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1500,9000,6,10,"Sph",7,"range too long",1.5,1.5,60000,1.50009435286223,1.57808219311053,63164.5229744217,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,9000,6,10,"Sph",7,"nugget equals sill",2.9,0.1,6000,2.9028939160658,0.127181375823555,14682.9690810913,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,9000,6,10,"Exp",1,"sensible",1.5,1.5,6000,2.04237344812389,22.1320558921232,742960.646023791,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,9000,6,10,"Exp",1,"range too short",1.5,1.5,600,1.51935113995309,1.4806487383972,601.777971387813,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,9000,6,10,"Exp",1,"range too long",1.5,1.5,60000,1.58586241637067,14.0798204374333,649842.514485936,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,9000,6,10,"Exp",1,"nugget equals sill",2.9,0.1,6000,2.89588245651844,0.130136758318872,21087.0984216922,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,9000,6,10,"Exp",2,"sensible",1.5,1.5,6000,2.13801976273216,7.04036339043443,231092.51900307,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,9000,6,10,"Exp",2,"range too short",1.5,1.5,600,1.51935110619091,1.48064877215984,601.777968257625,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,9000,6,10,"Exp",2,"range too long",1.5,1.5,60000,1.5527427689642,6.77370582910489,318465.828681385,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,9000,6,10,"Exp",2,"nugget equals sill",2.9,0.1,6000,2.89754570343908,0.12681534075943,20504.51651762,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,9000,6,10,"Exp",7,"sensible",1.5,1.5,6000,2.11609180460224,3.50155243403322,86496.3067973026,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,9000,6,10,"Exp",7,"range too short",1.5,1.5,600,1.5219469040924,1.47805291198162,602.018752184831,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,9000,6,10,"Exp",7,"range too long",1.5,1.5,60000,1.51518263918003,2.44039533078939,107587.839399654,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,9000,6,10,"Exp",7,"nugget equals sill",2.9,0.1,6000,2.91374817050612,0.0945881675389849,11195.0854771026,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,9000,6,10,"Gau",1,"sensible",1.5,1.5,6000,2.00436850288715,1.26431011819952,17315.0171609764,FALSE,"",TRUE
+1500,9000,6,10,"Gau",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1500,9000,6,10,"Gau",1,"range too long",1.5,1.5,60000,2.00437112830681,1.26428269532203,17314.906767653,FALSE,"",TRUE
+1500,9000,6,10,"Gau",1,"nugget equals sill",2.9,0.1,6000,2.00438038868175,1.26418599249943,17314.5178130923,FALSE,"",TRUE
+1500,9000,6,10,"Gau",2,"sensible",1.5,1.5,6000,2.45938033276319,52341.9078718519,2381579.82903095,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,9000,6,10,"Gau",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1500,9000,6,10,"Gau",2,"range too long",1.5,1.5,60000,2.01055685332511,1.47584715971858,19274.4203541312,FALSE,"",TRUE
+1500,9000,6,10,"Gau",2,"nugget equals sill",2.9,0.1,6000,2.01535917985094,1.50335287463776,19673.120350374,FALSE,"",TRUE
+1500,9000,6,10,"Gau",7,"sensible",1.5,1.5,6000,3.15512824314372,145961.634769146,2443937.16909342,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,9000,6,10,"Gau",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1500,9000,6,10,"Gau",7,"range too long",1.5,1.5,60000,3.1551287765561,199739.776427905,2856416.94012709,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,9000,6,10,"Gau",7,"nugget equals sill",2.9,0.1,6000,2.91009754164404,0.115866968502089,15941.4177179362,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Sph",1,"sensible",1.5,1.5,6000,1.91538192196659,7.3778782159085,128494.099075354,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Sph",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1500,10000,7,10,"Sph",1,"range too long",1.5,1.5,60000,1.50342948433151,2.62478453570132,104228.468367325,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Sph",1,"nugget equals sill",2.9,0.1,6000,2.56888540332446,1.96875869227113,79819.0666248753,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Sph",2,"sensible",1.5,1.5,6000,2.07964675053132,3.58266067001279,68075.6844079893,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Sph",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1500,10000,7,10,"Sph",2,"range too long",1.5,1.5,60000,1.50242914956366,2.36432959323545,94282.014024773,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Sph",2,"nugget equals sill",2.9,0.1,6000,2.59839087261873,1.69631812597166,73483.4351733608,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Sph",7,"sensible",1.5,1.5,6000,2.0777797602732,2.73712876024047,40313.8394571127,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Sph",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1500,10000,7,10,"Sph",7,"range too long",1.5,1.5,60000,1.50015960442003,1.60457113335285,64246.3330931496,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Sph",7,"nugget equals sill",2.9,0.1,6000,2.90210223183956,0.129697529879142,15981.4999150726,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Exp",1,"sensible",1.5,1.5,6000,2.05089579034964,17.376121871485,574449.644072891,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Exp",1,"range too short",1.5,1.5,600,1.5180296763852,1.4819702295025,601.65560346024,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Exp",1,"range too long",1.5,1.5,60000,1.57244681173521,10.8166952488237,501615.01605042,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Exp",1,"nugget equals sill",2.9,0.1,6000,2.89682451789489,0.128242815176109,20628.3721027272,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Exp",2,"sensible",1.5,1.5,6000,2.13897237983882,7.67959930327,259948.059480375,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Exp",2,"range too short",1.5,1.5,600,1.51802975299733,1.48197015288947,601.655610555027,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Exp",2,"range too long",1.5,1.5,60000,1.55686397633233,7.29927010180029,343906.584464842,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Exp",2,"nugget equals sill",2.9,0.1,6000,2.8981301110742,0.1256473973858,20193.6251434109,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Exp",7,"sensible",1.5,1.5,6000,2.13402591194567,3.58674489045363,95654.3438434128,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Exp",7,"range too short",1.5,1.5,600,1.52110636264516,1.4788934748598,601.940724940412,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Exp",7,"range too long",1.5,1.5,60000,1.51903630068461,2.60813892474134,116928.565658895,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Exp",7,"nugget equals sill",2.9,0.1,6000,2.91410174494671,0.094015648646969,11458.2379315735,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Gau",1,"sensible",1.5,1.5,6000,2.0211730957648,2.43165148418188,26040.6695172215,FALSE,"",TRUE
+1500,10000,7,10,"Gau",1,"range too short",1.5,1.5,600,1.4999760873459,1.49995355554455,595.888374642204,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+1500,10000,7,10,"Gau",1,"range too long",1.5,1.5,60000,2.02111229953764,2.43676622186358,26070.7050336542,FALSE,"",TRUE
+1500,10000,7,10,"Gau",1,"nugget equals sill",2.9,0.1,6000,2.02111126976011,2.43685315337722,26071.2155267593,FALSE,"",TRUE
+1500,10000,7,10,"Gau",2,"sensible",1.5,1.5,6000,2.39130520489317,39498.1644943902,2325235.37783063,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Gau",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1500,10000,7,10,"Gau",2,"range too long",1.5,1.5,60000,2.02418631738112,2.90510409719248,28909.4849260043,FALSE,"",TRUE
+1500,10000,7,10,"Gau",2,"nugget equals sill",2.9,0.1,6000,2.03043718066664,3.47755118477854,32213.2992336547,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Gau",7,"sensible",1.5,1.5,6000,3.07628245008335,134512.222067018,2598835.98646018,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Gau",7,"range too short",1.5,1.5,600,1.50002049947629,1.4998373647486,588.720341476652,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+1500,10000,7,10,"Gau",7,"range too long",1.5,1.5,60000,3.07628289683114,184102.730564385,3037728.93278073,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,10000,7,10,"Gau",7,"nugget equals sill",2.9,0.1,6000,2.90983663017087,0.11602436674115,16735.3750334062,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Sph",1,"sensible",1.5,1.5,6000,1.96579769346693,4.47731341096951,56441.2280842708,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Sph",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1500,11000,8,10,"Sph",1,"range too long",1.5,1.5,60000,1.5002773951621,1.68362675116453,67419.9742354649,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Sph",1,"nugget equals sill",2.9,0.1,6000,2.86041559481059,0.255397262732076,22267.649824999,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Sph",2,"sensible",1.5,1.5,6000,2.01043209189995,4.00241019666733,52817.0822902083,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Sph",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1500,11000,8,10,"Sph",2,"range too long",1.5,1.5,60000,1.50028289893236,1.689391453016,67649.4239367905,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Sph",2,"nugget equals sill",2.9,0.1,6000,2.86135164239926,0.252752189291468,22174.9989303945,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Sph",7,"sensible",1.5,1.5,6000,2.05263767461983,3.11405646343154,42251.8909143433,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Sph",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1500,11000,8,10,"Sph",7,"range too long",1.5,1.5,60000,1.50016605144744,1.60703380516841,64346.669229651,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Sph",7,"nugget equals sill",2.9,0.1,6000,2.90229576816742,0.136326948564302,16062.0189043783,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Exp",1,"sensible",1.5,1.5,6000,2.11153095054269,5.35018892222515,141541.737978675,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Exp",1,"range too short",1.5,1.5,600,1.51392543170944,1.48607454154671,601.27644581226,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Exp",1,"range too long",1.5,1.5,60000,1.52440111024453,3.26042639033398,148270.705344219,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Exp",1,"nugget equals sill",2.9,0.1,6000,2.91328715202482,0.0960026060317214,11277.3716167485,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Exp",2,"sensible",1.5,1.5,6000,2.11856577441164,5.01319074972337,132962.3623004,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Exp",2,"range too short",1.5,1.5,600,1.51392544586917,1.4860745273869,601.276447118895,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Exp",2,"range too long",1.5,1.5,60000,1.52459570169083,3.32109208102574,151053.064946955,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Exp",2,"nugget equals sill",2.9,0.1,6000,2.91327639543968,0.0960192063179943,11278.9673563272,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Exp",7,"sensible",1.5,1.5,6000,2.12021010588733,3.7925796419712,95827.8374108726,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Exp",7,"range too short",1.5,1.5,600,1.518666890627,1.48133300249589,601.714593244184,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Exp",7,"range too long",1.5,1.5,60000,1.51838374037468,2.5817986202849,115425.620733589,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Exp",7,"nugget equals sill",2.9,0.1,6000,2.91330616558201,0.0953332266775896,10891.3535614064,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Gau",1,"sensible",1.5,1.5,6000,2.54579099073033,68229.7420753121,2361365.56854467,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Gau",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1500,11000,8,10,"Gau",1,"range too long",1.5,1.5,60000,2.54578981276856,84772.7838381235,2630642.43331352,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Gau",1,"nugget equals sill",2.9,0.1,6000,2.89616764787572,0.228754554852635,25669.8964406096,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Gau",2,"sensible",1.5,1.5,6000,2.65321720098965,83483.1644470747,2468348.91417573,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Gau",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+1500,11000,8,10,"Gau",2,"range too long",1.5,1.5,60000,2.51677756583872,80323.1154463814,2596483.19685464,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Gau",2,"nugget equals sill",2.9,0.1,6000,2.89610689676934,0.228668187410565,25647.1159735437,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Gau",7,"sensible",1.5,1.5,6000,3.07889376524694,135369.875809112,2592513.32476309,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Gau",7,"range too short",1.5,1.5,600,1.49998114682202,1.49985058966509,586.78065541098,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+1500,11000,8,10,"Gau",7,"range too long",1.5,1.5,60000,3.07889410221035,184413.610022891,3023316.24833749,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+1500,11000,8,10,"Gau",7,"nugget equals sill",2.9,0.1,6000,2.91019971368144,0.116234445650437,15947.5258621704,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Sph",1,"sensible",1.5,1.5,6000,1.8384499952754,0.50930285493838,6379.65594518072,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Sph",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2000,8000,4,13,"Sph",1,"range too long",1.5,1.5,60000,1.50040974327496,1.13750102768596,45197.1239677405,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Sph",1,"nugget equals sill",2.9,0.1,6000,1.78863627639437,0.605798582568221,7587.24929491157,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Sph",2,"sensible",1.5,1.5,6000,2.03908396393749,5.07030873864987,152058.852936806,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Sph",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2000,8000,4,13,"Sph",2,"range too long",1.5,1.5,60000,1.50149354691991,0.96138046986399,37903.3881030186,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Sph",2,"nugget equals sill",2.9,0.1,6000,1.85522825860078,0.480816579000835,6268.95776325825,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Sph",7,"sensible",1.5,1.5,6000,2.04908935592829,2.79010673477058,43623.305232477,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Sph",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2000,8000,4,13,"Sph",7,"range too long",1.5,1.5,60000,1.50016142311267,1.63422792611231,65421.4804103582,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Sph",7,"nugget equals sill",2.9,0.1,6000,2.86843486479009,0.193720810076952,18985.0683626822,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Exp",1,"sensible",1.5,1.5,6000,1.8571305511857,1.01123331919225,26686.4212310076,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Exp",1,"range too short",1.5,1.5,600,1.50246772494917,1.49753227369074,600.183189377383,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Exp",1,"range too long",1.5,1.5,60000,1.86230835268159,1.21985365195861,35938.6854893525,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Exp",1,"nugget equals sill",2.9,0.1,6000,1.8618505881984,1.21217242052829,35591.1085438207,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Exp",2,"sensible",1.5,1.5,6000,2.04296948326084,24.7795162602144,988195.23347029,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Exp",2,"range too short",1.5,1.5,600,1.50246123609673,1.49753876255128,600.182707144258,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Exp",2,"range too long",1.5,1.5,60000,1.9144811942324,8.98003740859689,371245.230150185,FALSE,"",TRUE
+2000,8000,4,13,"Exp",2,"nugget equals sill",2.9,0.1,6000,1.87066885113324,1.29959388441131,39931.9359946694,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Exp",7,"sensible",1.5,1.5,6000,2.0801438512206,5.47914312606783,149853.990452143,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Exp",7,"range too short",1.5,1.5,600,1.50233438131844,1.49766561753174,600.173281020767,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Exp",7,"range too long",1.5,1.5,60000,1.52251347676736,3.29989422110228,148996.236427041,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Exp",7,"nugget equals sill",2.9,0.1,6000,2.90469228715513,0.112141984043065,16029.8969479602,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Gau",1,"sensible",1.5,1.5,6000,1.93084645395726,0.575492940694612,6894.93671576943,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Gau",1,"range too short",1.5,1.5,600,1.50011016462391,1.4995659419356,594.374148738059,TRUE,"singular model in variogram fit",FALSE
+2000,8000,4,13,"Gau",1,"range too long",1.5,1.5,60000,1.9265044845532,0.595764889146713,7874.1115295498,FALSE,"",TRUE
+2000,8000,4,13,"Gau",1,"nugget equals sill",2.9,0.1,6000,1.93710716447999,0.571798958137803,7231.9384143252,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Gau",2,"sensible",1.5,1.5,6000,2.15565184717758,9317.62263088217,1461678.07514611,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Gau",2,"range too short",1.5,1.5,600,1.49898968978007,1.50047301061513,589.83685037835,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+2000,8000,4,13,"Gau",2,"range too long",1.5,1.5,60000,1.96616369870668,0.565899250932977,8714.70072575362,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Gau",2,"nugget equals sill",2.9,0.1,6000,1.93371619571407,0.600557312760013,8116.29565963338,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Gau",7,"sensible",1.5,1.5,6000,2.48842967620843,67393.0008302267,2265774.45360874,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Gau",7,"range too short",1.5,1.5,600,1.49999992511189,1.49999953479937,599.791614000419,TRUE,"singular model in variogram fit",FALSE
+2000,8000,4,13,"Gau",7,"range too long",1.5,1.5,60000,2.48842976352342,81098.2098394487,2484337.95384582,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,8000,4,13,"Gau",7,"nugget equals sill",2.9,0.1,6000,2.48841969354249,3307.31593119417,511761.436086091,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Sph",1,"sensible",1.5,1.5,6000,2.00536594342143,3.44961831258621,72231.1976733153,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Sph",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2000,9000,5,13,"Sph",1,"range too long",1.5,1.5,60000,1.50094193214364,1.98357479542089,79341.2699389476,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Sph",1,"nugget equals sill",2.9,0.1,6000,2.64008615142324,1.01580721547912,47533.7328556871,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Sph",2,"sensible",1.5,1.5,6000,2.08596222305182,2.74394179304848,57778.5671229745,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Sph",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2000,9000,5,13,"Sph",2,"range too long",1.5,1.5,60000,1.50091009251663,1.97017396929583,78814.6531588148,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Sph",2,"nugget equals sill",2.9,0.1,6000,2.65927445144583,0.933430094501754,45806.2583009818,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Sph",7,"sensible",1.5,1.5,6000,2.03775556407293,3.09284072520496,47733.2736760319,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Sph",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2000,9000,5,13,"Sph",7,"range too long",1.5,1.5,60000,1.50021726821318,1.65883024307469,66418.7963912533,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Sph",7,"nugget equals sill",2.9,0.1,6000,2.86616669849054,0.205972446229593,20286.1918350443,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Exp",1,"sensible",1.5,1.5,6000,2.02250254055457,13.2207319476719,410136.056753539,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Exp",1,"range too short",1.5,1.5,600,1.50211195727176,1.49788804188872,600.156755748635,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Exp",1,"range too long",1.5,1.5,60000,1.55073427479786,7.46953000770294,344530.102698989,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Exp",1,"nugget equals sill",2.9,0.1,6000,2.87761672133374,0.171478329560446,26843.991856519,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Exp",2,"sensible",1.5,1.5,6000,2.06063239083314,9.62101299310619,300159.531223714,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Exp",2,"range too short",1.5,1.5,600,1.50211608856484,1.49788391059184,600.157062685632,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Exp",2,"range too long",1.5,1.5,60000,1.54695241254297,6.68171844453235,309175.699703545,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Exp",2,"nugget equals sill",2.9,0.1,6000,2.87866499991316,0.168900007386066,26478.8455230627,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Exp",7,"sensible",1.5,1.5,6000,2.08220225438696,5.78644034303726,161108.467722098,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Exp",7,"range too short",1.5,1.5,600,1.50216498585904,1.49783501323398,600.160695335468,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Exp",7,"range too long",1.5,1.5,60000,1.52497881653975,3.46776036603351,157834.143203879,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Exp",7,"nugget equals sill",2.9,0.1,6000,2.90479940577284,0.112208236402954,15986.5978841145,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Gau",1,"sensible",1.5,1.5,6000,2.04496074927449,1381.13434271744,592808.711833179,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Gau",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2000,9000,5,13,"Gau",1,"range too long",1.5,1.5,60000,2.04495570946191,1674.26157392525,652430.651745127,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Gau",1,"nugget equals sill",2.9,0.1,6000,2.04497279907956,973.631271302229,498141.084153902,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Gau",2,"sensible",1.5,1.5,6000,2.23041833546532,23219.4886133518,1847645.40256382,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Gau",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2000,9000,5,13,"Gau",2,"range too long",1.5,1.5,60000,2.04232176370749,1521.99084892472,624636.397529364,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Gau",2,"nugget equals sill",2.9,0.1,6000,2.05325889099287,1323.45060830289,571672.645031601,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Gau",7,"sensible",1.5,1.5,6000,2.46277694294202,62339.0344792976,2304583.29889531,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Gau",7,"range too short",1.5,1.5,600,1.50000008008294,1.49999253668444,597.642410281234,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+2000,9000,5,13,"Gau",7,"range too long",1.5,1.5,60000,2.46277697827861,74331.9576551886,2515396.64757594,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,9000,5,13,"Gau",7,"nugget equals sill",2.9,0.1,6000,2.46277366659783,3887.23172684537,585001.810638204,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Sph",1,"sensible",1.5,1.5,6000,1.99235355153913,4.21652937435946,78635.0917080436,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Sph",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2000,10000,5,13,"Sph",1,"range too long",1.5,1.5,60000,1.50103619950559,2.006115513541,80248.0247246313,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Sph",1,"nugget equals sill",2.9,0.1,6000,2.69078495336448,0.866624106320254,45676.1035562518,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Sph",2,"sensible",1.5,1.5,6000,2.02644720893641,3.81604309464615,68220.8570118259,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Sph",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2000,10000,5,13,"Sph",2,"range too long",1.5,1.5,60000,1.50102639118173,2.00141832531499,80064.2989495974,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Sph",2,"nugget equals sill",2.9,0.1,6000,2.70018824044989,0.824384049147164,44670.3588353038,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Sph",7,"sensible",1.5,1.5,6000,2.04539442751947,3.20062250025775,52177.816270747,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Sph",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2000,10000,5,13,"Sph",7,"range too long",1.5,1.5,60000,1.50032399938372,1.69930128951539,68060.7923615132,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Sph",7,"nugget equals sill",2.9,0.1,6000,2.8610341934111,0.221833939204048,22191.9489443697,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Exp",1,"sensible",1.5,1.5,6000,2.02661405965578,13.3566840197418,415793.545869442,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Exp",1,"range too short",1.5,1.5,600,1.5019429377592,1.49805706161143,600.144200355971,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Exp",1,"range too long",1.5,1.5,60000,1.5521873645418,7.54900503468809,349627.48330751,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Exp",1,"nugget equals sill",2.9,0.1,6000,2.88233698384644,0.159987861887203,25009.7529769437,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Exp",2,"sensible",1.5,1.5,6000,2.06065282897217,10.2831782844397,324807.813332763,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Exp",2,"range too short",1.5,1.5,600,1.50194432454592,1.49805567482365,600.144303373775,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Exp",2,"range too long",1.5,1.5,60000,1.55006174190153,7.04507859985483,327262.573756554,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Exp",2,"nugget equals sill",2.9,0.1,6000,2.88301551222472,0.158403492355306,24786.3621026108,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Exp",7,"sensible",1.5,1.5,6000,2.08930679556881,6.11773189925015,179077.937449585,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Exp",7,"range too short",1.5,1.5,600,1.50207712598499,1.49792287322505,600.154168275042,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Exp",7,"range too long",1.5,1.5,60000,1.52949237024496,3.77402110187908,174115.15703854,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Exp",7,"nugget equals sill",2.9,0.1,6000,2.90422068923736,0.113110802426007,16468.7347931343,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Gau",1,"sensible",1.5,1.5,6000,2.05043162480016,1487.59124261821,623070.130340383,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Gau",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2000,10000,5,13,"Gau",1,"range too long",1.5,1.5,60000,2.05042463671967,1784.43387249104,682153.715376186,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Gau",1,"nugget equals sill",2.9,0.1,6000,2.05045538674791,950.213681595154,498506.144161887,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Gau",2,"sensible",1.5,1.5,6000,2.20304782334007,17855.9466116383,1747201.61061833,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Gau",2,"range too short",1.5,1.5,600,1.50000007776496,1.49999953205462,600.220980894705,TRUE,"singular model in variogram fit",FALSE
+2000,10000,5,13,"Gau",2,"range too long",1.5,1.5,60000,2.0467312398866,1561.56191278276,641859.808541422,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Gau",2,"nugget equals sill",2.9,0.1,6000,2.05637815893683,1163.85290763847,546136.857577665,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Gau",7,"sensible",1.5,1.5,6000,2.42645196820288,54771.7396065909,2354212.54812918,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Gau",7,"range too short",1.5,1.5,600,1.50000004966406,1.49999729243846,599.321708698548,TRUE,"singular model in variogram fit",FALSE
+2000,10000,5,13,"Gau",7,"range too long",1.5,1.5,60000,2.42645196941932,64957.8838174193,2562691.80400704,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,10000,5,13,"Gau",7,"nugget equals sill",2.9,0.1,6000,2.42645190006846,5067.85648964,724989.868046343,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Sph",1,"sensible",1.5,1.5,6000,1.96040780858426,4.17695063525329,52292.6013666085,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Sph",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2000,11000,6,13,"Sph",1,"range too long",1.5,1.5,60000,1.5002272196858,1.65557595247272,66294.5437212162,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Sph",1,"nugget equals sill",2.9,0.1,6000,2.861873377676,0.241302360187276,21036.1492384805,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Sph",2,"sensible",1.5,1.5,6000,1.96334882073136,4.19413073286577,52533.242113262,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Sph",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2000,11000,6,13,"Sph",2,"range too long",1.5,1.5,60000,1.50023303915181,1.66332664762964,66603.5912748972,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Sph",2,"nugget equals sill",2.9,0.1,6000,2.8621106794037,0.2408107914813,21025.7930189786,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Sph",7,"sensible",1.5,1.5,6000,1.9899708263253,3.88636759029647,51575.80127277,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Sph",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2000,11000,6,13,"Sph",7,"range too long",1.5,1.5,60000,1.50022484344618,1.66073067335493,66498.7040093715,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Sph",7,"nugget equals sill",2.9,0.1,6000,2.87214345816563,0.21174990331745,20305.758147527,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Exp",1,"sensible",1.5,1.5,6000,2.10693926791263,4.91841979599994,127435.978679034,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Exp",1,"range too short",1.5,1.5,600,1.50138284396578,1.49861715591799,600.102607207226,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Exp",1,"range too long",1.5,1.5,60000,1.52219852383775,3.02214723590214,136743.515867339,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Exp",1,"nugget equals sill",2.9,0.1,6000,2.91251416324484,0.0973621995328529,11434.5712908829,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Exp",2,"sensible",1.5,1.5,6000,2.08593726446566,5.36846333372815,136605.863532833,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Exp",2,"range too short",1.5,1.5,600,1.50138533033805,1.49861466954507,600.102791821249,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Exp",2,"range too long",1.5,1.5,60000,1.52263971463661,3.17502574269761,143774.136422404,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Exp",2,"nugget equals sill",2.9,0.1,6000,2.9124233086209,0.0975303172307293,11461.5501408322,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Exp",7,"sensible",1.5,1.5,6000,2.06650228875336,6.10914162098747,156137.242358916,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Exp",7,"range too short",1.5,1.5,600,1.50173403389902,1.49826596569535,600.128684650409,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Exp",7,"range too long",1.5,1.5,60000,1.52281431167279,3.29932537084824,149373.196850132,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Exp",7,"nugget equals sill",2.9,0.1,6000,2.90751133428465,0.10799006784465,13772.4038078828,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Gau",1,"sensible",1.5,1.5,6000,2.66205000557515,85963.3776892296,2458072.28310562,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Gau",1,"range too short",1.5,1.5,600,1.49999998024161,1.4999999861698,600.085645412958,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+2000,11000,6,13,"Gau",1,"range too long",1.5,1.5,60000,2.66204845538262,109237.340185182,2769180.84635724,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Gau",1,"nugget equals sill",2.9,0.1,6000,2.90182892360332,0.177443231820763,22501.983594429,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Gau",2,"sensible",1.5,1.5,6000,2.54426922768064,76095.6067566277,2375998.43686597,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Gau",2,"range too short",1.5,1.5,600,1.49999996283544,1.49999996981073,600.171528015988,TRUE,"singular model in variogram fit",FALSE
+2000,11000,6,13,"Gau",2,"range too long",1.5,1.5,60000,2.62216973359686,102119.650686924,2722716.88045102,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Gau",2,"nugget equals sill",2.9,0.1,6000,2.90113836672562,0.182874456902419,22880.4706518943,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Gau",7,"sensible",1.5,1.5,6000,2.4896801197481,68385.2098550017,2333926.63406302,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Gau",7,"range too short",1.5,1.5,600,1.49998698301751,1.50000016017317,598.8976695274,TRUE,"singular model in variogram fit",FALSE
+2000,11000,6,13,"Gau",7,"range too long",1.5,1.5,60000,2.4896799717888,82242.3016543155,2558291.16492363,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2000,11000,6,13,"Gau",7,"nugget equals sill",2.9,0.1,6000,2.48975997876865,749.257190669719,256808.222677053,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,8000,4,16,"Sph",1,"sensible",1.5,1.5,6000,1.45374806099534,1.05139018436622,8089.08328064982,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,8000,4,16,"Sph",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2500,8000,4,16,"Sph",1,"range too long",1.5,1.5,60000,1.49989491921394,1.32301220410196,52772.8166015599,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,8000,4,16,"Sph",1,"nugget equals sill",2.9,0.1,6000,1.59290338504488,0.832995100565001,6464.04438557509,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,8000,4,16,"Sph",2,"sensible",1.5,1.5,6000,1.66036926544066,0.732567015225322,6690.82891259118,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,8000,4,16,"Sph",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2500,8000,4,16,"Sph",2,"range too long",1.5,1.5,60000,1.49988571683032,1.27886108299004,50952.4917300611,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,8000,4,16,"Sph",2,"nugget equals sill",2.9,0.1,6000,1.59820821107577,0.952853136527192,9050.53129642174,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,8000,4,16,"Sph",7,"sensible",1.5,1.5,6000,1.8156800967148,5.95492846201129,81440.4200343508,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,8000,4,16,"Sph",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2500,8000,4,16,"Sph",7,"range too long",1.5,1.5,60000,1.50044070167308,1.91380177105971,76469.6711727112,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,8000,4,16,"Sph",7,"nugget equals sill",2.9,0.1,6000,2.7274153439698,0.773028206920619,40110.6757501091,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,8000,4,16,"Exp",1,"sensible",1.5,1.5,6000,1.47243054264463,1.56908867879942,19937.4764181178,FALSE,"",TRUE
+2500,8000,4,16,"Exp",1,"range too short",1.5,1.5,600,1.50001040645411,1.49998959354442,600.000527161491,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+2500,8000,4,16,"Exp",1,"range too long",1.5,1.5,60000,1.47111202989983,1.56654763181458,19842.3739561536,FALSE,"",TRUE
+2500,8000,4,16,"Exp",1,"nugget equals sill",2.9,0.1,6000,1.4824951760353,1.58495197860159,20582.4830928145,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,8000,4,16,"Exp",2,"sensible",1.5,1.5,6000,1.55002802275776,1.72112919263806,26465.6454334884,FALSE,"",TRUE
+2500,8000,4,16,"Exp",2,"range too short",1.5,1.5,600,1.50000591795107,1.49999408204853,600.000299752704,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+2500,8000,4,16,"Exp",2,"range too long",1.5,1.5,60000,1.54264718834801,1.92962433290418,30496.7812183011,FALSE,"",TRUE
+2500,8000,4,16,"Exp",2,"nugget equals sill",2.9,0.1,6000,1.47492055346846,1.56968642939708,20055.1175762042,FALSE,"",TRUE
+2500,8000,4,16,"Exp",7,"sensible",1.5,1.5,6000,1.90850794109218,15.5961475507654,378700.741839157,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,8000,4,16,"Exp",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2500,8000,4,16,"Exp",7,"range too long",1.5,1.5,60000,1.52636842058659,6.17517329909155,272989.822642918,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,8000,4,16,"Exp",7,"nugget equals sill",2.9,0.1,6000,2.88379359611885,0.153960303028473,20643.623047222,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,8000,4,16,"Gau",1,"sensible",1.5,1.5,6000,1.75164194913418,0.923131254824718,9432.20368470735,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,8000,4,16,"Gau",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2500,8000,4,16,"Gau",1,"range too long",1.5,1.5,60000,1.8491367069594,0.795628720156691,9623.73018228871,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,8000,4,16,"Gau",1,"nugget equals sill",2.9,0.1,6000,1.72968064416028,0.911977746084649,7527.76625972173,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,8000,4,16,"Gau",2,"sensible",1.5,1.5,6000,1.76866187807662,1.03260027592657,9331.93384105632,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,8000,4,16,"Gau",2,"range too short",1.5,1.5,600,1.5,1.5,600.000011507913,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+2500,8000,4,16,"Gau",2,"range too long",1.5,1.5,60000,1.84546290619426,0.849694942747007,11377.9309418387,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,8000,4,16,"Gau",2,"nugget equals sill",2.9,0.1,6000,1.82730795475496,0.817930472156976,9059.11040191293,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,8000,4,16,"Gau",7,"sensible",1.5,1.5,6000,1.88454514387149,520.396110214531,314944.356974716,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,8000,4,16,"Gau",7,"range too short",1.5,1.5,600,1.5,1.5,600.000017210011,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+2500,8000,4,16,"Gau",7,"range too long",1.5,1.5,60000,1.88451019939753,685.851565324478,361425.530979972,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,8000,4,16,"Gau",7,"nugget equals sill",2.9,0.1,6000,1.88461090929096,358.082957491549,261396.133858295,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,9000,4,24,"Sph",1,"sensible",1.5,1.5,6000,1.39159798317539,1.23234692762442,8412.0052215586,FALSE,"",TRUE
+2500,9000,4,24,"Sph",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2500,9000,4,24,"Sph",1,"range too long",1.5,1.5,60000,1.49952703380264,1.02055780915157,39972.7793417859,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,9000,4,24,"Sph",1,"nugget equals sill",2.9,0.1,6000,1.39159798317539,1.23234692790688,8412.00522378443,FALSE,"",TRUE
+2500,9000,4,24,"Sph",2,"sensible",1.5,1.5,6000,1.53131175372919,1.14657046659486,9708.20489943963,FALSE,"",TRUE
+2500,9000,4,24,"Sph",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2500,9000,4,24,"Sph",2,"range too long",1.5,1.5,60000,1.49944102927076,0.887945328814351,34167.2320323143,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,9000,4,24,"Sph",2,"nugget equals sill",2.9,0.1,6000,1.40064292477392,1.22488686388654,8465.46681976671,FALSE,"",TRUE
+2500,9000,4,24,"Sph",7,"sensible",1.5,1.5,6000,1.77767332602189,7.56342153158005,99000.5317149889,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,9000,4,24,"Sph",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2500,9000,4,24,"Sph",7,"range too long",1.5,1.5,60000,1.5006992698957,2.06837989976345,82492.2400810859,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,9000,4,24,"Sph",7,"nugget equals sill",2.9,0.1,6000,2.68397464834719,1.08036906644813,49731.6727516981,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,9000,4,24,"Exp",1,"sensible",1.5,1.5,6000,1.46592710418549,2.06124279198172,27908.5236377985,FALSE,"",TRUE
+2500,9000,4,24,"Exp",1,"range too short",1.5,1.5,600,1.5000043307935,1.49999566920628,600.000219361817,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+2500,9000,4,24,"Exp",1,"range too long",1.5,1.5,60000,1.46885567962962,2.07716942365789,28342.8413117664,FALSE,"",TRUE
+2500,9000,4,24,"Exp",1,"nugget equals sill",2.9,0.1,6000,1.46875523455704,2.07668144985006,28329.2699313753,FALSE,"",TRUE
+2500,9000,4,24,"Exp",2,"sensible",1.5,1.5,6000,1.55190502801176,2.56282336205672,42493.2890693848,FALSE,"",TRUE
+2500,9000,4,24,"Exp",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2500,9000,4,24,"Exp",2,"range too long",1.5,1.5,60000,1.53092022585371,2.65438324666745,43080.9526022946,FALSE,"",TRUE
+2500,9000,4,24,"Exp",2,"nugget equals sill",2.9,0.1,6000,1.4709504564732,2.07581835315711,28405.800894665,FALSE,"",TRUE
+2500,9000,4,24,"Exp",7,"sensible",1.5,1.5,6000,1.89119210420537,19.9618728517805,492065.291464577,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,9000,4,24,"Exp",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2500,9000,4,24,"Exp",7,"range too long",1.5,1.5,60000,1.53179013505225,7.84761399448266,344382.447491325,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,9000,4,24,"Exp",7,"nugget equals sill",2.9,0.1,6000,2.88003186049732,0.162326265920644,21735.5764929403,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,9000,4,24,"Gau",1,"sensible",1.5,1.5,6000,1.77587255530202,1.04094084278788,10709.3343756967,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,9000,4,24,"Gau",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2500,9000,4,24,"Gau",1,"range too long",1.5,1.5,60000,1.82015542076153,0.978934594257475,10215.6101012879,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,9000,4,24,"Gau",1,"nugget equals sill",2.9,0.1,6000,1.67030534535507,1.14196295194383,6935.13125688243,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,9000,4,24,"Gau",2,"sensible",1.5,1.5,6000,1.8005179646474,1.16005343653822,11696.8376665583,FALSE,"",TRUE
+2500,9000,4,24,"Gau",2,"range too short",1.5,1.5,600,1.5,1.5,600.000017141999,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+2500,9000,4,24,"Gau",2,"range too long",1.5,1.5,60000,1.72119964468569,1.12094319724944,9786.31743146999,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,9000,4,24,"Gau",2,"nugget equals sill",2.9,0.1,6000,1.89606239579747,0.900688945934565,11976.5749821136,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,9000,4,24,"Gau",7,"sensible",1.5,1.5,6000,1.86312477384555,4.5079634875553,29591.4655613642,FALSE,"",TRUE
+2500,9000,4,24,"Gau",7,"range too short",1.5,1.5,600,1.5,1.5,600.000007310578,TRUE,"singular model in variogram fit",FALSE
+2500,9000,4,24,"Gau",7,"range too long",1.5,1.5,60000,1.86309769264931,4.51232093435945,29607.1808213793,FALSE,"",TRUE
+2500,9000,4,24,"Gau",7,"nugget equals sill",2.9,0.1,6000,1.86312477384579,4.50796348751806,29591.4655612299,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,10000,4,24,"Sph",1,"sensible",1.5,1.5,6000,1.39987886624767,1.2991034288021,9111.28384143131,FALSE,"",TRUE
+2500,10000,4,24,"Sph",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2500,10000,4,24,"Sph",1,"range too long",1.5,1.5,60000,1.49908374833134,0.884228692604169,33904.5497020155,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,10000,4,24,"Sph",1,"nugget equals sill",2.9,0.1,6000,1.39987886624767,1.29910342872486,9111.28384073743,FALSE,"",TRUE
+2500,10000,4,24,"Sph",2,"sensible",1.5,1.5,6000,1.52724266078861,1.21887190465371,10305.309846825,FALSE,"",TRUE
+2500,10000,4,24,"Sph",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2500,10000,4,24,"Sph",2,"range too long",1.5,1.5,60000,1.49871242712632,0.731489131817398,26815.017103999,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,10000,4,24,"Sph",2,"nugget equals sill",2.9,0.1,6000,1.40795209930361,1.2925093384113,9162.37104659436,FALSE,"",TRUE
+2500,10000,4,24,"Sph",7,"sensible",1.5,1.5,6000,1.75341784136291,10.2342662697939,133269.076213884,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,10000,4,24,"Sph",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2500,10000,4,24,"Sph",7,"range too long",1.5,1.5,60000,1.50150958148646,2.45297920740165,97197.0918966605,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,10000,4,24,"Sph",7,"nugget equals sill",2.9,0.1,6000,2.57718007756825,2.01426561828727,73792.2080553928,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,10000,4,24,"Exp",1,"sensible",1.5,1.5,6000,1.44514224052716,2.03151911573625,26167.5154502563,FALSE,"",TRUE
+2500,10000,4,24,"Exp",1,"range too short",1.5,1.5,600,1.50001474880577,1.49998525119348,600.000747074106,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+2500,10000,4,24,"Exp",1,"range too long",1.5,1.5,60000,1.44378018887794,2.02676834304548,26021.9256974874,FALSE,"",TRUE
+2500,10000,4,24,"Exp",1,"nugget equals sill",2.9,0.1,6000,1.44364609810149,2.02626323436118,26006.7106255953,FALSE,"",TRUE
+2500,10000,4,24,"Exp",2,"sensible",1.5,1.5,6000,1.52982166319689,2.32802991178028,35991.2961507847,FALSE,"",TRUE
+2500,10000,4,24,"Exp",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2500,10000,4,24,"Exp",2,"range too long",1.5,1.5,60000,1.50730527898088,2.37375710479166,35787.889396121,FALSE,"",TRUE
+2500,10000,4,24,"Exp",2,"nugget equals sill",2.9,0.1,6000,1.4490068983706,2.0370627115821,26427.4518263813,FALSE,"",TRUE
+2500,10000,4,24,"Exp",7,"sensible",1.5,1.5,6000,1.86358730010389,28.858754001059,734749.516430751,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,10000,4,24,"Exp",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2500,10000,4,24,"Exp",7,"range too long",1.5,1.5,60000,1.54258514845204,11.8021062034842,507712.095811191,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,10000,4,24,"Exp",7,"nugget equals sill",2.9,0.1,6000,2.86762812456696,0.190698884115591,25509.8568473056,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,10000,4,24,"Gau",1,"sensible",1.5,1.5,6000,1.85020386002597,0.965613044286998,10692.0629406041,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,10000,4,24,"Gau",1,"range too short",1.5,1.5,600,1.5,1.5,600.000005538563,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+2500,10000,4,24,"Gau",1,"range too long",1.5,1.5,60000,1.72404247952553,1.12018119108625,9920.5409255444,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,10000,4,24,"Gau",1,"nugget equals sill",2.9,0.1,6000,1.8206461827701,1.00368255781023,10354.1901188888,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,10000,4,24,"Gau",2,"sensible",1.5,1.5,6000,1.79461964510829,1.14449419135323,11373.0848082833,FALSE,"",TRUE
+2500,10000,4,24,"Gau",2,"range too short",1.5,1.5,600,1.5,1.5,600.000011077128,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+2500,10000,4,24,"Gau",2,"range too long",1.5,1.5,60000,1.72334368058991,1.13352361212175,9936.03575680037,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,10000,4,24,"Gau",2,"nugget equals sill",2.9,0.1,6000,1.86805418701182,0.955210063492475,11917.6683413751,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,10000,4,24,"Gau",7,"sensible",1.5,1.5,6000,1.85722533864345,2.05183768886172,18987.3202772558,FALSE,"",TRUE
+2500,10000,4,24,"Gau",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2500,10000,4,24,"Gau",7,"range too long",1.5,1.5,60000,1.85721812891654,2.05196725810152,18987.8428226014,FALSE,"",TRUE
+2500,10000,4,24,"Gau",7,"nugget equals sill",2.9,0.1,6000,1.85722096441092,2.05191629687077,18987.6372850874,FALSE,"",TRUE
+2500,11000,5,24,"Sph",1,"sensible",1.5,1.5,6000,1.74558237034266,6.15007938711505,64285.0484888696,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Sph",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2500,11000,5,24,"Sph",1,"range too long",1.5,1.5,60000,1.50023051346095,1.70021919235687,68061.7520655898,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Sph",1,"nugget equals sill",2.9,0.1,6000,2.82757819327201,0.356897177155523,24958.8670949848,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Sph",2,"sensible",1.5,1.5,6000,1.76455075462203,6.15699519345446,65107.4525521995,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Sph",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2500,11000,5,24,"Sph",2,"range too long",1.5,1.5,60000,1.50023307052871,1.71518748458026,68652.5813593974,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Sph",2,"nugget equals sill",2.9,0.1,6000,2.82746240715498,0.357490398508643,24985.1427915115,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Sph",7,"sensible",1.5,1.5,6000,1.78293749327049,6.6181478844046,72441.4576289052,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Sph",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2500,11000,5,24,"Sph",7,"range too long",1.5,1.5,60000,1.50024316799248,1.76804654602243,70730.3772827901,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Sph",7,"nugget equals sill",2.9,0.1,6000,2.80419288313223,0.459996193483964,29199.9532204281,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Exp",1,"sensible",1.5,1.5,6000,2.03553339690015,7.20469705409952,175414.35158656,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Exp",1,"range too short",1.5,1.5,600,1.50001661765953,1.49998338233931,600.000842078727,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+2500,11000,5,24,"Exp",1,"range too long",1.5,1.5,60000,1.52120641672924,3.59235833319578,161684.336364668,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Exp",1,"nugget equals sill",2.9,0.1,6000,2.91114314499419,0.0991859171026161,11419.5387449884,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Exp",2,"sensible",1.5,1.5,6000,2.01225680678739,7.95011662721609,189748.844391673,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Exp",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2500,11000,5,24,"Exp",2,"range too long",1.5,1.5,60000,1.52106796278706,3.88199177002754,174189.537321071,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Exp",2,"nugget equals sill",2.9,0.1,6000,2.91106720497717,0.0993218973288701,11439.1263874144,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Exp",7,"sensible",1.5,1.5,6000,1.94084876203744,12.0444004202137,276158.093257005,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Exp",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2500,11000,5,24,"Exp",7,"range too long",1.5,1.5,60000,1.52112468989588,4.70026615253603,208778.852752317,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Exp",7,"nugget equals sill",2.9,0.1,6000,2.90218819224043,0.116831423821603,14331.8792316447,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Gau",1,"sensible",1.5,1.5,6000,2.25554484769408,41013.2193073784,1954210.314553,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Gau",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2500,11000,5,24,"Gau",1,"range too long",1.5,1.5,60000,2.25554207738405,49728.9786992978,2150828.75110042,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Gau",1,"nugget equals sill",2.9,0.1,6000,2.25616462766283,1018.07786014467,317009.303559111,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Gau",2,"sensible",1.5,1.5,6000,2.12802137779664,29008.9319598789,1717394.18137447,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Gau",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+2500,11000,5,24,"Gau",2,"range too long",1.5,1.5,60000,2.21183150939378,42580.1079950053,2038814.76375739,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Gau",2,"nugget equals sill",2.9,0.1,6000,2.24680653122774,1207.94504783915,345166.890200711,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Gau",7,"sensible",1.5,1.5,6000,1.96467509282137,8530.58970581853,1069816.04596122,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Gau",7,"range too short",1.5,1.5,600,1.5,1.5,600.0000017815,TRUE,"singular model in variogram fit",FALSE
+2500,11000,5,24,"Gau",7,"range too long",1.5,1.5,60000,1.96467143414807,10066.2548329597,1161679.24443589,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+2500,11000,5,24,"Gau",7,"nugget equals sill",2.9,0.1,6000,1.96471364821855,3271.59915009774,664494.538875783,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,8000,3,38,"Sph",1,"sensible",1.5,1.5,6000,0.84785803972622,1.4703237784556,3084.52804634973,TRUE,"singular model in variogram fit",FALSE
+3000,8000,3,38,"Sph",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+3000,8000,3,38,"Sph",1,"range too long",1.5,1.5,60000,1.499966591052,1.35574759495304,54136.0531500529,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,8000,3,38,"Sph",1,"nugget equals sill",2.9,0.1,6000,1.53411664487328,0.922733121340669,3449.24529034721,TRUE,"singular model in variogram fit",FALSE
+3000,8000,3,38,"Sph",2,"sensible",1.5,1.5,6000,0.860158958074824,1.49374605136359,3890.34622816751,TRUE,"singular model in variogram fit",FALSE
+3000,8000,3,38,"Sph",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+3000,8000,3,38,"Sph",2,"range too long",1.5,1.5,60000,1.499966591052,1.35574759495321,54136.0531500598,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,8000,3,38,"Sph",2,"nugget equals sill",2.9,0.1,6000,2.63942163904823,0.25897847597864,4449.70068646179,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+3000,8000,3,38,"Sph",7,"sensible",1.5,1.5,6000,0.847858039726178,1.47032377845564,3084.52804634955,TRUE,"singular model in variogram fit",FALSE
+3000,8000,3,38,"Sph",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+3000,8000,3,38,"Sph",7,"range too long",1.5,1.5,60000,1.499966591052,1.35574759495193,54136.0531500076,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,8000,3,38,"Sph",7,"nugget equals sill",2.9,0.1,6000,2.62066392309797,0.270162565590641,4433.94065736038,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+3000,8000,3,38,"Exp",1,"sensible",1.5,1.5,6000,0,2.37674358788093,3561.89686748583,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,8000,3,38,"Exp",1,"range too short",1.5,1.5,600,1.40473340536712,1.59525969451844,600.777361846311,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+3000,8000,3,38,"Exp",1,"range too long",1.5,1.5,60000,0,2.37674533830606,3561.92290514961,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,8000,3,38,"Exp",1,"nugget equals sill",2.9,0.1,6000,0,2.3767385924562,3561.82272028023,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,8000,3,38,"Exp",2,"sensible",1.5,1.5,6000,0,2.38329721466035,3645.43149504436,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,8000,3,38,"Exp",2,"range too short",1.5,1.5,600,1.31184637044725,1.68813646061506,603.4278223554,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+3000,8000,3,38,"Exp",2,"range too long",1.5,1.5,60000,0,2.4029507729946,3760.79532648863,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,8000,3,38,"Exp",2,"nugget equals sill",2.9,0.1,6000,0,2.38330820200115,3645.54499648527,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,8000,3,38,"Exp",7,"sensible",1.5,1.5,6000,0,2.40660045024618,3778.49422685553,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,8000,3,38,"Exp",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+3000,8000,3,38,"Exp",7,"range too long",1.5,1.5,60000,0,2.40659729282865,3778.4747869634,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,8000,3,38,"Exp",7,"nugget equals sill",2.9,0.1,6000,0,2.40659988435424,3778.49073794301,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,8000,3,38,"Gau",1,"sensible",1.5,1.5,6000,0.141172916791614,2.60948587219659,2428.47576840245,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,8000,3,38,"Gau",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+3000,8000,3,38,"Gau",1,"range too long",1.5,1.5,60000,1.30240103425301,0.451747610871735,3303.78606666799,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,8000,3,38,"Gau",1,"nugget equals sill",2.9,0.1,6000,2.76687606258665,0.21213383556182,2912.9164020086,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,8000,3,38,"Gau",2,"sensible",1.5,1.5,6000,0.141172922171798,2.60948586682334,2428.47577187306,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,8000,3,38,"Gau",2,"range too short",1.5,1.5,600,1.5,1.5,600.000000000709,FALSE,"linear model has singular covariance matrix; No convergence after 200 iterations: try different initial values?",FALSE
+3000,8000,3,38,"Gau",2,"range too long",1.5,1.5,60000,1.30240103425279,0.451747610871989,3303.78606666647,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,8000,3,38,"Gau",2,"nugget equals sill",2.9,0.1,6000,2.76687606258618,0.212133835562271,2912.91640200378,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,8000,3,38,"Gau",7,"sensible",1.5,1.5,6000,0.141172940437759,2.60948584856373,2428.47578364197,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,8000,3,38,"Gau",7,"range too short",1.5,1.5,600,1.5,1.5,600.000000000689,FALSE,"linear model has singular covariance matrix; No convergence after 200 iterations: try different initial values?",FALSE
+3000,8000,3,38,"Gau",7,"range too long",1.5,1.5,60000,1.30240103425453,0.451747610870107,3303.78606667835,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,8000,3,38,"Gau",7,"nugget equals sill",2.9,0.1,6000,2.76687606259033,0.212133835558233,2912.91640204694,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,9000,3,38,"Sph",1,"sensible",1.5,1.5,6000,1.43779607470355,1.05725343024694,6425.83570387463,FALSE,"",TRUE
+3000,9000,3,38,"Sph",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+3000,9000,3,38,"Sph",1,"range too long",1.5,1.5,60000,1.49995488401453,1.24679085068107,49627.6818992898,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,9000,3,38,"Sph",1,"nugget equals sill",2.9,0.1,6000,1.45046217332588,1.0403562915545,4541.70035960623,TRUE,"singular model in variogram fit",FALSE
+3000,9000,3,38,"Sph",2,"sensible",1.5,1.5,6000,1.43779607470355,1.05725343024694,6425.83570387463,FALSE,"",TRUE
+3000,9000,3,38,"Sph",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+3000,9000,3,38,"Sph",2,"range too long",1.5,1.5,60000,1.49995488401453,1.24679085067918,49627.6818992119,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,9000,3,38,"Sph",2,"nugget equals sill",2.9,0.1,6000,1.43779607470358,1.05725343024692,6425.83570387442,FALSE,"",TRUE
+3000,9000,3,38,"Sph",7,"sensible",1.5,1.5,6000,1.43779611452947,1.05725339042102,6425.83535293268,FALSE,"",TRUE
+3000,9000,3,38,"Sph",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+3000,9000,3,38,"Sph",7,"range too long",1.5,1.5,60000,1.49995488401453,1.24679085067969,49627.6818992325,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,9000,3,38,"Sph",7,"nugget equals sill",2.9,0.1,6000,1.437796295808,1.05725320914249,6425.83763500825,FALSE,"",TRUE
+3000,9000,3,38,"Exp",1,"sensible",1.5,1.5,6000,0.667304039256901,1.85693939117181,5403.06006233054,FALSE,"",TRUE
+3000,9000,3,38,"Exp",1,"range too short",1.5,1.5,600,1.50216513382141,1.49783478403781,600.1620114323,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+3000,9000,3,38,"Exp",1,"range too long",1.5,1.5,60000,0.667304040103303,1.85693939027869,5403.06006121246,FALSE,"",TRUE
+3000,9000,3,38,"Exp",1,"nugget equals sill",2.9,0.1,6000,0.667304040987852,1.85693938934533,5403.06006630143,FALSE,"",TRUE
+3000,9000,3,38,"Exp",2,"sensible",1.5,1.5,6000,0.667304039256905,1.85693939117181,5403.06006233055,FALSE,"",TRUE
+3000,9000,3,38,"Exp",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+3000,9000,3,38,"Exp",2,"range too long",1.5,1.5,60000,0.667304040103306,1.85693939027869,5403.06006121247,FALSE,"",TRUE
+3000,9000,3,38,"Exp",2,"nugget equals sill",2.9,0.1,6000,0.667304040987852,1.85693938934533,5403.06006630143,FALSE,"",TRUE
+3000,9000,3,38,"Exp",7,"sensible",1.5,1.5,6000,0.667304463476187,1.85693894349903,5403.05905917155,FALSE,"",TRUE
+3000,9000,3,38,"Exp",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+3000,9000,3,38,"Exp",7,"range too long",1.5,1.5,60000,0.667337238714425,1.85690438585547,5403.1701403411,FALSE,"",TRUE
+3000,9000,3,38,"Exp",7,"nugget equals sill",2.9,0.1,6000,0.667304040987852,1.85693938934533,5403.06006630143,FALSE,"",TRUE
+3000,9000,3,38,"Gau",1,"sensible",1.5,1.5,6000,1.80989492774434,0.688617527024044,6561.29437725409,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,9000,3,38,"Gau",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+3000,9000,3,38,"Gau",1,"range too long",1.5,1.5,60000,1.67925923756724,0.821172737790595,4706.01540512587,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,9000,3,38,"Gau",1,"nugget equals sill",2.9,0.1,6000,1.79818524295717,0.70075271744674,6833.99526535824,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,9000,3,38,"Gau",2,"sensible",1.5,1.5,6000,1.58296429878125,0.917715932180747,4539.09185033829,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,9000,3,38,"Gau",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+3000,9000,3,38,"Gau",2,"range too long",1.5,1.5,60000,1.72014906723432,0.7791547023579,6395.26093167534,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,9000,3,38,"Gau",2,"nugget equals sill",2.9,0.1,6000,1.71498976722082,0.784813795987624,4769.54357985302,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,9000,3,38,"Gau",7,"sensible",1.5,1.5,6000,1.66818447298071,0.832186816377796,4655.43066246291,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,9000,3,38,"Gau",7,"range too short",1.5,1.5,600,1.5,1.5,600.00000000061,FALSE,"linear model has singular covariance matrix; No convergence after 200 iterations: try different initial values?",FALSE
+3000,9000,3,38,"Gau",7,"range too long",1.5,1.5,60000,1.76429093861061,0.735544555220628,5232.8862265776,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,9000,3,38,"Gau",7,"nugget equals sill",2.9,0.1,6000,1.74265618221419,0.756445881996285,6832.37751225865,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,10000,4,33,"Sph",1,"sensible",1.5,1.5,6000,1.4736881100643,1.10467009889092,7309.08909372911,FALSE,"",TRUE
+3000,10000,4,33,"Sph",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+3000,10000,4,33,"Sph",1,"range too long",1.5,1.5,60000,1.76973401032849,1.35195577330541,17780.581994594,FALSE,"",TRUE
+3000,10000,4,33,"Sph",1,"nugget equals sill",2.9,0.1,6000,1.76973401032849,1.3519613973677,17780.6604177822,FALSE,"",TRUE
+3000,10000,4,33,"Sph",2,"sensible",1.5,1.5,6000,1.4736881100643,1.10467009889092,7309.08909372911,FALSE,"",TRUE
+3000,10000,4,33,"Sph",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+3000,10000,4,33,"Sph",2,"range too long",1.5,1.5,60000,1.73636526169996,1.15111334508842,13864.1078188364,FALSE,"",TRUE
+3000,10000,4,33,"Sph",2,"nugget equals sill",2.9,0.1,6000,1.76545947935565,1.32965612214074,17326.3810792679,FALSE,"",TRUE
+3000,10000,4,33,"Sph",7,"sensible",1.5,1.5,6000,1.46512618942635,1.08810749761224,7050.43963887658,FALSE,"",TRUE
+3000,10000,4,33,"Sph",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+3000,10000,4,33,"Sph",7,"range too long",1.5,1.5,60000,1.50098744761167,0.785866479780722,29744.5412002133,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,10000,4,33,"Sph",7,"nugget equals sill",2.9,0.1,6000,1.46512619961511,1.08810748742349,7050.43969595385,FALSE,"",TRUE
+3000,10000,4,33,"Exp",1,"sensible",1.5,1.5,6000,1.55779525632411,1.49754212723256,19632.9033543599,FALSE,"",TRUE
+3000,10000,4,33,"Exp",1,"range too short",1.5,1.5,600,1.50282217367826,1.49717777623903,600.169806948062,TRUE,"linear model has singular covariance matrix; singular model in variogram fit",FALSE
+3000,10000,4,33,"Exp",1,"range too long",1.5,1.5,60000,1.55798522803575,1.49778855423333,19645.8749126583,FALSE,"",TRUE
+3000,10000,4,33,"Exp",1,"nugget equals sill",2.9,0.1,6000,1.55887176274675,1.49892831809603,19706.120355766,FALSE,"",TRUE
+3000,10000,4,33,"Exp",2,"sensible",1.5,1.5,6000,1.49448802583294,1.4630820061218,16587.7637144238,FALSE,"",TRUE
+3000,10000,4,33,"Exp",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+3000,10000,4,33,"Exp",2,"range too long",1.5,1.5,60000,1.45263886223166,1.43117281192949,14552.2213638058,FALSE,"",TRUE
+3000,10000,4,33,"Exp",2,"nugget equals sill",2.9,0.1,6000,1.55406291131103,1.49477810382765,19427.3185500859,FALSE,"",TRUE
+3000,10000,4,33,"Exp",7,"sensible",1.5,1.5,6000,1.17482143156962,1.51044587065642,8899.66258345652,FALSE,"",TRUE
+3000,10000,4,33,"Exp",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+3000,10000,4,33,"Exp",7,"range too long",1.5,1.5,60000,1.17486087100064,1.51042584363578,8900.161842343,FALSE,"",TRUE
+3000,10000,4,33,"Exp",7,"nugget equals sill",2.9,0.1,6000,1.17501625269505,1.51034621347001,8902.11175772291,FALSE,"",TRUE
+3000,10000,4,33,"Gau",1,"sensible",1.5,1.5,6000,1.76319790333309,0.864061487227601,7486.61125395548,FALSE,"",TRUE
+3000,10000,4,33,"Gau",1,"range too short",1.5,1.5,600,1.5,1.5,600.000000000512,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,10000,4,33,"Gau",1,"range too long",1.5,1.5,60000,1.7631983036077,0.864060853950674,7486.61889253428,FALSE,"",TRUE
+3000,10000,4,33,"Gau",1,"nugget equals sill",2.9,0.1,6000,1.76319844053586,0.8640606373167,7486.62150555861,FALSE,"",TRUE
+3000,10000,4,33,"Gau",2,"sensible",1.5,1.5,6000,1.71927092535368,0.911703324539571,6742.26888961177,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,10000,4,33,"Gau",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+3000,10000,4,33,"Gau",2,"range too long",1.5,1.5,60000,1.75492406311306,0.864843048828374,7347.35896254977,FALSE,"",TRUE
+3000,10000,4,33,"Gau",2,"nugget equals sill",2.9,0.1,6000,1.76159318989045,0.86510388868042,7469.6301035281,FALSE,"",TRUE
+3000,10000,4,33,"Gau",7,"sensible",1.5,1.5,6000,1.78221546018699,0.80118523688513,5675.03463236861,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,10000,4,33,"Gau",7,"range too short",1.5,1.5,600,1.5,1.5,600.000000000571,FALSE,"linear model has singular covariance matrix; No convergence after 200 iterations: try different initial values?",FALSE
+3000,10000,4,33,"Gau",7,"range too long",1.5,1.5,60000,1.81304904767751,0.756397331738799,7939.33372379997,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,10000,4,33,"Gau",7,"nugget equals sill",2.9,0.1,6000,1.71456701646833,0.87165627342829,5022.80731446761,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,11000,4,38,"Sph",1,"sensible",1.5,1.5,6000,1.8760975695436,5.45675066963048,64955.8787971668,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,11000,4,38,"Sph",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+3000,11000,4,38,"Sph",1,"range too long",1.5,1.5,60000,1.5003298928087,1.73083848582578,69294.4954354866,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,11000,4,38,"Sph",1,"nugget equals sill",2.9,0.1,6000,2.79558227694418,0.467784763675997,28759.3395865643,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,11000,4,38,"Sph",2,"sensible",1.5,1.5,6000,1.82641375066486,6.10223815002813,69559.7188522029,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,11000,4,38,"Sph",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+3000,11000,4,38,"Sph",2,"range too long",1.5,1.5,60000,1.50034135446894,1.74704741177322,69934.3451628362,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,11000,4,38,"Sph",2,"nugget equals sill",2.9,0.1,6000,2.79448995394702,0.472404362750714,28893.2790076246,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,11000,4,38,"Sph",7,"sensible",1.5,1.5,6000,1.72419785146218,9.11379038088615,99473.6998765161,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,11000,4,38,"Sph",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+3000,11000,4,38,"Sph",7,"range too long",1.5,1.5,60000,1.50050519126877,1.98846034735278,79313.2203643813,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,11000,4,38,"Sph",7,"nugget equals sill",2.9,0.1,6000,2.57610123641366,1.79375660807799,56397.913675721,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,11000,4,38,"Exp",1,"sensible",1.5,1.5,6000,2.08460253435689,7.3472108545097,193202.19936118,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,11000,4,38,"Exp",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+3000,11000,4,38,"Exp",1,"range too long",1.5,1.5,60000,1.52702500306008,3.9456693345367,179291.829784227,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,11000,4,38,"Exp",1,"nugget equals sill",2.9,0.1,6000,2.91323314829843,0.0979333604716107,12148.8050935975,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,11000,4,38,"Exp",2,"sensible",1.5,1.5,6000,2.05310353449809,8.54404709359779,218491.827259321,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,11000,4,38,"Exp",2,"range too short",1.5,1.5,600,1.50063337881626,1.4993666194467,600.031110778137,TRUE,"singular model in variogram fit",FALSE
+3000,11000,4,38,"Exp",2,"range too long",1.5,1.5,60000,1.52755055183493,4.3656199308865,197510.526079811,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,11000,4,38,"Exp",2,"nugget equals sill",2.9,0.1,6000,2.9131215564546,0.0981377470765249,12180.1027182545,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,11000,4,38,"Exp",7,"sensible",1.5,1.5,6000,1.8257411262849,31.3290076794457,685476.804638916,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,11000,4,38,"Exp",7,"range too short",1.5,1.5,600,1.50014405605317,1.49985594371907,600.00600447953,TRUE,"singular model in variogram fit",FALSE
+3000,11000,4,38,"Exp",7,"range too long",1.5,1.5,60000,1.53250108384738,10.1124869786158,421901.263814224,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,11000,4,38,"Exp",7,"nugget equals sill",2.9,0.1,6000,2.84818551675173,0.260183405487958,30342.1977685371,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,11000,4,38,"Gau",1,"sensible",1.5,1.5,6000,2.28858048543621,33626.075549107,1914285.17437099,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,11000,4,38,"Gau",1,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+3000,11000,4,38,"Gau",1,"range too long",1.5,1.5,60000,2.28857779299773,40357.5311017193,2096210.11901026,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,11000,4,38,"Gau",1,"nugget equals sill",2.9,0.1,6000,2.28878804515529,2425.68744638013,521592.950585695,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,11000,4,38,"Gau",2,"sensible",1.5,1.5,6000,2.08830729686885,14153.359661333,1366562.28620329,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,11000,4,38,"Gau",2,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+3000,11000,4,38,"Gau",2,"range too long",1.5,1.5,60000,2.25890615756425,35570.7304738914,2006108.38293566,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,11000,4,38,"Gau",2,"nugget equals sill",2.9,0.1,6000,2.2748847802868,2683.65470785328,551079.382143091,FALSE,"No convergence after 200 iterations: try different initial values?",FALSE
+3000,11000,4,38,"Gau",7,"sensible",1.5,1.5,6000,1.85906520426315,2.8448293927412,20689.0320454052,FALSE,"",TRUE
+3000,11000,4,38,"Gau",7,"range too short",1.5,1.5,600,1.5,1.5,600,TRUE,"singular model in variogram fit",FALSE
+3000,11000,4,38,"Gau",7,"range too long",1.5,1.5,60000,1.85905567319413,2.84513410996566,20690.169871878,FALSE,"",TRUE
+3000,11000,4,38,"Gau",7,"nugget equals sill",2.9,0.1,6000,1.85905567319413,2.84513410996565,20690.169871878,FALSE,"",TRUE

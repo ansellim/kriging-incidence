@@ -1,0 +1,21 @@
+{
+  "land": {
+    "provider": "URA",
+    "dataset_id": "d_8594ae9ff96d0c708bc2af633048edfb",
+    "description": "Master Plan 2019 Subzone Boundary (No Sea)",
+    "role": "Administrative land proxy, not exact current coastline"
+  },
+  "community_clubs": {
+    "provider": "PA",
+    "dataset_id": "d_f706de1427279e61fe41e89e24d440fa",
+    "vintage": "2024",
+    "features": 125
+  },
+  "mrt_exits": {
+    "provider": "LTA",
+    "dataset_id": "d_b39d3a0871985372d7e1637193335da5",
+    "features": 613,
+    "source_description": "Official station exit dataset, page updated September 16, 2026"
+  },
+  "cached_on": "2026-10-07"
+}
