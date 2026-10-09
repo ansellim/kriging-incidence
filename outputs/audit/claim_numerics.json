@@ -1,0 +1,135 @@
+{
+  "site_count": 30,
+  "total_cases": 56,
+  "zero_count_sites": 9,
+  "count_range": [0, 6],
+  "sample_mean": 1.866666666666667,
+  "sample_variance": 2.947126436781609,
+  "coordinate_reprojection_max_m": 0.0007454624199315194,
+  "sampled_hull_land_km2": 191.13527436784145,
+  "land_proxy_km2": 784.78406830228732,
+  "illustrative_catchment_km2": 6.371175812261382,
+  "conditional_zone_density_1km2": [2.573801617895892, 3.18149308371832],
+  "conditional_zone_density_hull_per_site": [0.403975921201639, 0.4993572893712192],
+  "catchment_ratio_is_a_scenario_not_an_uncertainty_estimate": true,
+  "selected_rmse": 1.401975364562183,
+  "control_rmse": 1.746067434644436,
+  "relative_rmse_difference": 0.1970668848493373,
+  "selected_mae": 1.206446821823266,
+  "lowest_mae": 1.205244543972174,
+  "lowest_mae_model": "Exp",
+  "first_empirical_bins": [
+    {
+      "width_m": 1000,
+      "mean_lag_m": 639.57562016263716,
+      "pairs": 6,
+      "semivariance": 1.666666666666667
+    },
+    {
+      "width_m": 1500,
+      "mean_lag_m": 878.6737765691903,
+      "pairs": 10,
+      "semivariance": 2.75
+    },
+    {
+      "width_m": 2000,
+      "mean_lag_m": 1078.9148080516045,
+      "pairs": 13,
+      "semivariance": 2.269230769230769
+    },
+    {
+      "width_m": 2500,
+      "mean_lag_m": 1579.6245273907282,
+      "pairs": 24,
+      "semivariance": 1.916666666666667
+    },
+    {
+      "width_m": 3000,
+      "mean_lag_m": 2025.1594119396289,
+      "pairs": 38,
+      "semivariance": 1.921052631578947
+    }
+  ],
+  "final_1_5km_bin_at_11km_cutoff": [
+    {
+      "np": 19,
+      "dist": 10760.878918663571,
+      "gamma": 4.473684210526316
+    }
+  ],
+  "grid_cells": 1017,
+  "hull_overlapping_cells": 223,
+  "prediction_points_in_hull": 194,
+  "hull_overlapping_prediction_points_outside_hull": 29,
+  "high_zone_prediction_points_outside_hull": 3,
+  "beyond_range_prediction_points": 412,
+  "beyond_range_cell_land_km2": 258.12631852300075,
+  "beyond_range_gls_mean": 1.640194130630779,
+  "beyond_range_mean_estimation_variance": 0.1628346623373587,
+  "beyond_range_kriging_sd": 1.64804986252721,
+  "loo_max_nearest_training_km": 4.05542449610008,
+  "loo_sites_beyond_selected_range": 0,
+  "poisson_count_ratio": 0.7305414570138415,
+  "poisson_profile_interval": [0.5936998739816782, 0.8859863373504822],
+  "poisson_deviance_reduction": 0.1939181393267662,
+  "raw_moran": [0.4220135948295074, 0.4244484065076888],
+  "pearson_residual_moran": [0.01725305338702655, -0.03170701910300919],
+  "attributable_fraction_of_spatial_clustering_estimated": false,
+  "exceedance_frequencies": [
+    {
+      "threshold": 2,
+      "from_kriged_map": 0.2556053811659193,
+      "block_simulations": 0.3676008968609866,
+      "point_simulations": 0.4167937219730942
+    },
+    {
+      "threshold": 3,
+      "from_kriged_map": 0.06278026905829596,
+      "block_simulations": 0.1137668161434978,
+      "point_simulations": 0.2081838565022422
+    },
+    {
+      "threshold": 4,
+      "from_kriged_map": 0,
+      "block_simulations": 0.02114349775784753,
+      "point_simulations": 0.07975336322869955
+    }
+  ],
+  "single_cell_simulation_frequency_nominal_se_upper_bound": 0.03535533905932738,
+  "maximum_exceedance_frequency": 0.9399999999999999,
+  "maximum_frequency_in_top10": 0.9399999999999999,
+  "top10_fraction_frequency_over_half": 0.5217391304347826,
+  "center_names": ["Braddell Heights CC", "Kampong Glam CC"],
+  "centers_in_zone": [true, true],
+  "centers_in_core": [false, true],
+  "centers_mrt_straight_line_m": [140.98056551046312, 290.49758909695856],
+  "sensitivity_scenarios": 6,
+  "same_center_pair_scenarios": 5,
+  "sensitivity_center_pairs": [
+    {
+      "scenario": "Spherical (selected)",
+      "centers": "Braddell Heights CC + Kampong Glam CC"
+    },
+    {
+      "scenario": "Exponential, same bins",
+      "centers": "Braddell Heights CC + Kampong Glam CC"
+    },
+    {
+      "scenario": "Gaussian, same bins, pair weights",
+      "centers": "Braddell Heights CC + Kampong Glam CC"
+    },
+    {
+      "scenario": "Spherical, 2.5 km bins, pair weights",
+      "centers": "Braddell Heights CC + Kampong Glam CC"
+    },
+    {
+      "scenario": "Spherical, site 25 removed",
+      "centers": "Braddell Heights CC + Kampong Glam CC"
+    },
+    {
+      "scenario": "Universal kriging, linear trend in x and y",
+      "centers": "Kampong Glam CC + MacPherson CC"
+    }
+  ],
+  "distinction": "Numerical consistency and conditional model calculations do not establish causal, predictive, or operational validity."
+}

@@ -1,0 +1,690 @@
+{
+  "reviewed_changes": [
+    {
+      "id": "tested_bin_width",
+      "before": "3 km lag bins (the narrowest with at least 30 pairs per bin)",
+      "after": "3 km lag bins (the narrowest tested width with at least 30 pairs per bin)",
+      "reason": "The search tested five discrete widths; it did not establish the narrowest possible width.",
+      "evidence": "outputs/tables/variogram_bin_settings.csv"
+    },
+    {
+      "id": "abstract_cv",
+      "before": "reduced leave-one-out RMSE from",
+      "after": "gave a lower leave-one-out RMSE, from",
+      "reason": "A fixed-variogram comparison is not an independently validated improvement in future prediction.",
+      "evidence": "outputs/tables/variogram_candidates_cv.csv; Methods cross-validation limitations"
+    },
+    {
+      "id": "abstract_variogram",
+      "before": "Of 180 variogram settings searched, `r stable_n` gave stable fits.",
+      "after": "Of 180 variogram settings searched, `r stable_n` met the specified stability criteria.",
+      "reason": "Stability is an operational screening definition, not statistical precision.",
+      "evidence": "R/variograms.R"
+    },
+    {
+      "id": "abstract_cv_caution",
+      "before": "with a z-score SD near one (`r f(sel$z_sd)`).",
+      "after": "with a z-score SD near one (`r f(sel$z_sd)`). The variogram was held fixed during validation, and the same errors were used for model selection, so this comparison may be optimistic.",
+      "reason": "The abstract needs the material limitation attached to its performance claim.",
+      "evidence": "R/variogram_helpers.R; R/variograms.R"
+    },
+    {
+      "id": "count_surface",
+      "before": "to map a continuous risk surface on a 1 km grid",
+      "after": "to map predicted counts on a 1 km grid",
+      "reason": "Counts without population denominators do not establish individual disease risk.",
+      "evidence": "data/raw/assignment2.csv"
+    },
+    {
+      "id": "association_aim",
+      "before": "is associated with the counts and accounts for their spatial pattern",
+      "after": "is associated with the counts and whether residual spatial autocorrelation remains after adjustment",
+      "reason": "A residual diagnostic does not estimate an attributable proportion of spatial clustering.",
+      "evidence": "R/green_space.R"
+    },
+    {
+      "id": "zone_domain",
+      "before": "Squares overlapping the convex hull of the sites (the smallest convex polygon that contains them) formed the sampled area; predictions outside it are extrapolations.",
+      "after": "Squares overlapping the convex hull of the sites (the smallest convex polygon that contains them) defined the domain used for zone analysis, termed the sampled area below. This includes entire land portions of boundary squares, whose prediction points can fall outside the hull. Hull membership is a geometric convention and does not establish predictive reliability.",
+      "reason": "Cell overlap differs from point membership; the hull is not a validated boundary of reliability.",
+      "evidence": "R/kriging.R; outputs/audit/claim_numerics.json"
+    },
+    {
+      "id": "short_lag_weights",
+      "before": "which emphasizes short lags, where the kriging weights are largest",
+      "after": "which emphasizes short lags in fitting the variogram",
+      "reason": "Kriging weights can be negative and are not necessarily ordered by distance.",
+      "evidence": "Ordinary-kriging equations; gstat fit.variogram documentation"
+    },
+    {
+      "id": "range_screen",
+      "before": "a practical range no longer than the cutoff (beyond which no bin carries information)",
+      "after": "a practical range no longer than the cutoff (an analyst constraint against extrapolating the range beyond the fitted lags)",
+      "reason": "The cutoff rule is a screening choice, not an identifiability theorem.",
+      "evidence": "R/variograms.R"
+    },
+    {
+      "id": "z_score_diagnostic",
+      "before": "The standardized errors (z-scores) $r_i$ test whether the kriging variance describes the actual errors. If it does, they have a mean near 0 and a standard deviation near 1; an SD above 1 indicates that the uncertainty is understated, and below 1 that it is overstated",
+      "after": "The standardized errors (z-scores) $r_i$ provide a diagnostic comparison of prediction errors and modeled uncertainty. A mean near 0 and an SD near 1 are broadly consistent with calibration; an SD above or below 1 suggests uncertainty may be understated or overstated, respectively. With 30 dependent validation errors and a variogram fitted to all sites, these summaries do not establish calibrated intervals",
+      "reason": "An empirical SD near one is neither an interval-coverage test nor independent validation.",
+      "evidence": "R/variogram_helpers.R; Zimmerman and Cressie 1992"
+    },
+    {
+      "id": "control_criterion",
+      "before": "a spatial model is worthwhile only if it predicts better than this control",
+      "after": "lower error than this control was required by the selection rule",
+      "reason": "This is a decision rule for this study, not a universal necessary condition.",
+      "evidence": "R/variograms.R"
+    },
+    {
+      "id": "blup_assumptions",
+      "before": "it is therefore the best linear unbiased predictor given the variogram",
+      "after": "it is therefore the best linear unbiased predictor under the assumed mean and variogram",
+      "reason": "Optimality is conditional on the model assumptions, not just using a fitted variogram.",
+      "evidence": "Cressie 1993; Zimmerman and Cressie 1992"
+    },
+    {
+      "id": "fixed_variance",
+      "before": "The kriging variance depends only on the variogram and the layout of the sites, not on the observed counts, and generally increases with distance from the sites.",
+      "after": "For a fixed variogram, the kriging variance depends on the observation and prediction locations rather than directly on the observed counts. The fitted variogram itself depends on those counts. The variance generally increases away from the sites but excludes uncertainty from estimating the variogram parameters [@zimmerman1992].",
+      "reason": "Permuting observations while retaining the model does not establish data-independent uncertainty.",
+      "evidence": "Ordinary-kriging equations; Zimmerman and Cressie 1992"
+    },
+    {
+      "id": "block_geometry",
+      "before": "Block kriging was used to check zone totals.",
+      "after": "Block kriging was used as a sensitivity check on zone totals, using full 1 km rectangles centered on the zone prediction points; these rectangles were not clipped to irregular coastal land portions.",
+      "reason": "The implementation does not use the identical land support as the point integration.",
+      "evidence": "R/kriging.R: block=c(1000,1000)"
+    },
+    {
+      "id": "smoothing_theorem",
+      "before": "Because kriging minimizes the error at each location separately, it produces a surface smoother than the process it estimates: high values are underpredicted, low values overpredicted, and areas above a threshold understated",
+      "after": "Kriging predictions smooth variation relative to realizations of the fitted process and can suppress extreme values and threshold exceedance. This does not imply that every high value is underpredicted or that every threshold area is underestimated",
+      "reason": "Smoothing does not establish a universal direction of threshold-area error.",
+      "evidence": "Conditional variance decomposition; reported cross-validation scatter"
+    },
+    {
+      "id": "simulation_exactness",
+      "before": "Each simulated surface honors the observations and reproduces the variogram, so the spread across simulations represents the variability that the kriged map smooths away.",
+      "after": "These are approximate Gaussian realizations conditional on the observations and the fixed fitted variogram, using a local neighborhood. Individual realizations need not reproduce the empirical variogram exactly, and the simulations do not propagate variogram-parameter uncertainty.",
+      "reason": "Sequential simulation with nmax=30 is local; model covariance differs from a realization empirical variogram.",
+      "evidence": "R/kriging.R; gstat krige documentation"
+    },
+    {
+      "id": "boundary_percentiles",
+      "before": "Restricting the percentiles to the sampled area prevents extrapolated values from shifting the thresholds.",
+      "after": "Restricting the percentiles to hull-overlapping squares excludes the more distant cells from setting the thresholds, although boundary squares can include prediction points outside the hull.",
+      "reason": "Three top-quartile prediction points lie outside the hull despite their cells overlapping it.",
+      "evidence": "outputs/audit/claim_numerics.json; R/kriging.R"
+    },
+    {
+      "id": "assumed_point_surface",
+      "before": "Counts are treated as point observations of a continuous risk surface",
+      "after": "Counts are treated as point observations of a continuous count field",
+      "reason": "A continuous count predictor is not a risk-per-person estimate.",
+      "evidence": "data/raw/assignment2.csv; missing denominators"
+    },
+    {
+      "id": "first_bin_nugget",
+      "before": "At every bin width the variogram has a substantial nugget (first bins at about 1.7 to 2.8 cases^2^) and levels off between about 6 and 9 km",
+      "after": "The first-bin semivariances are about 1.7 to 2.8 cases^2^ across the tested widths, consistent with unresolved short-distance variation. Several binnings show limited further increase between about 6 and 9 km, although the apparent shape depends on bin width",
+      "reason": "A positive-lag first bin does not directly measure the zero-lag nugget or prove a plateau.",
+      "evidence": "gstat empirical variograms for all tested widths"
+    },
+    {
+      "id": "gradient_not_proven",
+      "before": "as expected under a large-scale gradient from the high-count southeast to the low-count west",
+      "after": "which is compatible with a large-scale gradient from the high-count southeast to the low-count west, but does not distinguish a trend from sampling variability",
+      "reason": "A noisy last bin does not identify the cause of a variogram rise.",
+      "evidence": "19-pair final bin; course trend heuristic"
+    },
+    {
+      "id": "two_starts",
+      "before": "The fit is therefore insensitive to how the starting sill is split between nugget and partial sill, but not to a starting range that is wrong by an order of magnitude.",
+      "after": "These two starts with different nugget/partial-sill splits gave the same fit, while the two tested extreme range starts did not converge cleanly. This limited comparison does not establish insensitivity to all starting values.",
+      "reason": "Two successful starts cannot establish general invariance.",
+      "evidence": "outputs/tables/variogram_fit_attempts.csv"
+    },
+    {
+      "id": "mae_ranking",
+      "before": "and the lowest mean absolute error (`r f(sel$mae, 3)` against `r f(r$control_cv$mae, 3)`)",
+      "after": "and a mean absolute error of `r f(sel$mae, 3)` against `r f(r$control_cv$mae, 3)` for the control; the exponential model had a slightly lower MAE (`r f(min(cands$mae), 3)`)",
+      "reason": "The exponential MAE is 1.2052445, below selected spherical MAE 1.2064468.",
+      "evidence": "outputs/tables/variogram_candidates_cv.csv"
+    },
+    {
+      "id": "family_effect",
+      "before": "so the choice of family matters little for prediction",
+      "after": "so these families gave similar errors in this fixed-variogram comparison",
+      "reason": "Similar errors at observed sites do not establish island-wide or general model equivalence.",
+      "evidence": "outputs/tables/variogram_candidates_cv.csv"
+    },
+    {
+      "id": "nugget_attribution",
+      "before": "The nugget (`r f(nug)` cases^2^) combines the sampling variation of small counts with real variation over distances shorter than the site spacing.",
+      "after": "The fitted nugget (`r f(nug)` cases^2^) may reflect count variation, measurement error and spatial variation below the observed spacing; these components cannot be separated here.",
+      "reason": "The fitted nugget does not identify its biological or measurement components.",
+      "evidence": "Fitted variogram; no repeat observations"
+    },
+    {
+      "id": "sill_gradient",
+      "before": "the excess of the sample variance over the sill reflects the large-scale gradient.",
+      "after": "the difference between the sample variance and the fitted sill does not by itself establish a large-scale trend.",
+      "reason": "Finite-sample variance, covariance, trend and estimation error can all contribute.",
+      "evidence": "Sample variance 2.9471; fitted sill 2.5532"
+    },
+    {
+      "id": "range_improvement",
+      "before": "so most locations in the sampled area have several sites within range, which is the condition for kriging to improve on the mean",
+      "after": "but this ratio alone does not establish how many neighbors are informative at a prediction location or guarantee an improvement over a mean-only predictor",
+      "reason": "A ratio to median site spacing is not a pointwise neighbor count or a guarantee of predictive gain.",
+      "evidence": "Site distances; conditional kriging equations"
+    },
+    {
+      "id": "bin_degrees_freedom",
+      "before": "but imprecise, because four bins leave one degree of freedom for three parameters.",
+      "after": "but their precision was not estimated. Only four bin means constrain three fitted parameters, and the bin estimates share observations and are not independent.",
+      "reason": "Subtracting parameter count from number of correlated bins is not an inferential degrees-of-freedom calculation.",
+      "evidence": "R/variograms.R; unordered pairs share sites"
+    },
+    {
+      "id": "land_proxy",
+      "before": "The land outline (`r f(r$land_km2, 1)` km^2^) was covered by",
+      "after": "The URA 2019 administrative land proxy (`r f(r$land_km2, 1)` km^2^), rather than a current surveyed land-area estimate, was covered by",
+      "reason": "784.8 km2 is computed from the cached administrative layer, not a current official land statistic.",
+      "evidence": "data/cache/singapore_land.geojson"
+    },
+    {
+      "id": "remote_information",
+      "before": "They carry no information about the north, west or east of the island and are excluded from the zones.",
+      "after": "They rely on extending the fitted mean and covariance into unsampled regions and are excluded from the zones. For the selected spherical model, `r sum(grid$nearest_site_km > rng_km)` prediction points are beyond the fitted range from every site; their predictions equal the estimated constant mean (`r f(mean(grid$pred[grid$nearest_site_km > rng_km]))` cases), with kriging SD `r f(sqrt(mean(grid$var[grid$nearest_site_km > rng_km])))`. No leave-one-out site was farther than `r f(sp$nn_max_km)` km from its remaining observations, so validation does not assess these remote predictions [@mila2022].",
+      "reason": "Beyond-hull does not imply zero covariance; beyond-all-ranges yields a global-mean prediction. Validation locations are closer to data.",
+      "evidence": "outputs/audit/claim_numerics.json; kriging_grid.csv; Milà et al. 2022"
+    },
+    {
+      "id": "sanity_heading",
+      "before": "Expectation = c(\"Within observed 0 to 6\", \"None for counts\",",
+      "after": "Interpretation = c(\"Compare with observed 0 to 6; not a bound\", \"Flag if present; no nonnegativity constraint\",",
+      "reason": "Ordinary kriging does not guarantee a bounded or nonnegative predictor.",
+      "evidence": "Kriging weights can be negative; universal sensitivity includes negative predictions"
+    },
+    {
+      "id": "sanity_mean",
+      "before": "paste(\"Below observed mean\", f(st$mean[2])),",
+      "after": "paste(\"Compare with observed mean\", f(st$mean[2])),",
+      "reason": "A lower mean on an arbitrarily chosen prediction domain is not a validity requirement.",
+      "evidence": "Table is a diagnostic summary, not a hypothesis test"
+    },
+    {
+      "id": "sanity_sd",
+      "before": "paste(\"Below observed SD\", f(st$sd[2])),",
+      "after": "paste(\"Compare with observed SD\", f(st$sd[2])),",
+      "reason": "Different spatial populations/supports make lower SD descriptive rather than a general acceptance criterion.",
+      "evidence": "Site SD versus prediction-grid SD"
+    },
+    {
+      "id": "sanity_distance",
+      "before": "\"Rises away from the data\",\n                  \"Higher outside\",",
+      "after": "\"Assess association with distance\",\n                  \"Compare domain averages\",",
+      "reason": "Variance does not necessarily increase monotonically with nearest-site distance.",
+      "evidence": "Ordinary-kriging equations; Spearman association"
+    },
+    {
+      "id": "sanity_met",
+      "before": "The surface met every check",
+      "after": "These diagnostics describe the selected fitted surface",
+      "reason": "Passing descriptive expectations does not validate model adequacy or remote predictions.",
+      "evidence": "Table of empirical diagnostics"
+    },
+    {
+      "id": "variance_support",
+      "before": "The variance therefore reflects the sampling layout rather than the counts [@dickens2026]: it shows where predictions are supported, not where risk is high.",
+      "after": "This confirms that variance is independent of the count values when the fitted variogram is held fixed [@dickens2026]. It describes conditional model uncertainty, not disease risk or a validated boundary of reliable prediction. Variogram estimation and model misspecification remain unaccounted for [@zimmerman1992].",
+      "reason": "Fixed-model geometry is not empirical proof of reliability.",
+      "evidence": "Permutation calculation; Zimmerman and Cressie 1992"
+    },
+    {
+      "id": "exceedance_supports",
+      "before": "Compared with simulated averages over the squares, the point-support kriged map shows about half as many squares above 3 cases as the simulations (`r pct(ex$from_kriged_map[2], 1)` against `r pct(ex$block_simulations[2], 1)`), and none above 4 cases, against `r pct(ex$block_simulations[3], 1)` in the simulations (@tbl-exceed).",
+      "after": "The point-support kriged map has `r pct(ex$from_kriged_map[2], 1)` of sampled-area squares above 3 cases and none above 4, compared with averages of `r pct(ex$block_simulations[2], 1)` and `r pct(ex$block_simulations[3], 1)` across simulated block means (@tbl-exceed). This comparison changes both prediction type and spatial support, so it is not a direct estimate of undercounting or an isolated measure of smoothing bias.",
+      "reason": "6.3% versus 11.4% is arithmetically correct but does not validate real threshold area or isolate smoothing.",
+      "evidence": "outputs/tables/exceedance_map_vs_simulation.csv; R/kriging.R"
+    },
+    {
+      "id": "exceedance_estimate",
+      "before": "The probability that a square's mean exceeds 3 cases reaches `r f(p3_max)` in the top-10% core and exceeds 0.5 in `r pct(core_p3)` of the core's squares",
+      "after": "The simulation-based frequency of a square's land-lattice mean exceeding 3 cases reaches `r f(p3_max)` in the top-10% core and exceeds 0.5 in `r pct(core_p3)` of the core's squares",
+      "reason": "The value is a finite-simulation model estimate, not an observed outbreak probability.",
+      "evidence": "200 Gaussian simulations; saved p_exceed3 column"
+    },
+    {
+      "id": "simulation_mc",
+      "before": "Treating counts as Gaussian makes these probabilities approximate.",
+      "after": "Treating counts as Gaussian and holding the variogram fixed make these frequencies model-dependent. With 200 simulations, the nominal Monte Carlo standard error for a single frequency is at most about 0.035 if simulations are independent; this excludes parameter and model uncertainty.",
+      "reason": "sqrt(p(1-p)/200) is at most sqrt(0.25/200), not a total uncertainty bound.",
+      "evidence": "Binomial Monte Carlo variance; R/kriging.R"
+    },
+    {
+      "id": "model_count_ratio",
+      "before": "Each additional 10 percentage points of green space multiplied the expected count by",
+      "after": "In the fitted Poisson model, each additional 10 percentage points of green space was associated with an expected-count ratio of",
+      "reason": "A fitted observational association does not establish an intervention effect.",
+      "evidence": "Poisson regression; no causal design or denominators"
+    },
+    {
+      "id": "deviance_interpretation",
+      "before": "Green space explained `r pct(gm$deviance_explained)` of the null deviance.",
+      "after": "Adding green space reduced model deviance by `r pct(gm$deviance_explained)` relative to the intercept-only model; this is not a percentage of variance or spatial clustering explained.",
+      "reason": "19.4% is a fitted deviance reduction, not R2 or attributable spatial clustering.",
+      "evidence": "glm deviance/null.deviance"
+    },
+    {
+      "id": "linear_misfit",
+      "before": "A straight line misfits the convex relationship between counts and green space (@fig-green A), which leaves structure in its residuals, and all of these tests have low power with 30 sites.",
+      "after": "The linear and Poisson models use different mean and variance assumptions, so their residual diagnostics need not agree (@fig-green A). With only 30 sites, lack of significance cannot exclude residual dependence; no power calculation was performed.",
+      "reason": "A log-link fitted curve is convex by construction and does not prove the true relationship is convex or explain residual dependence.",
+      "evidence": "R/green_space.R"
+    },
+    {
+      "id": "most_clustering",
+      "before": "Green space therefore accounts for most of the spatial clustering described by the kriging model, although this is a qualitative interpretation rather than a quantified proportion of clustering explained.",
+      "after": "This is consistent with green space capturing part of the geographic pattern in the counts; no proportion of spatial clustering explained was estimated.",
+      "reason": "The latest user instruction requires avoiding overclaims; most was never estimated, even qualitatively labeled.",
+      "evidence": "Raw and Pearson-residual Moran statistics; separate OLS residual variogram"
+    },
+    {
+      "id": "count_model_extension",
+      "before": "for counts at 30 sites, a spatial Poisson model is the more appropriate extension",
+      "after": "a spatial count model with a suitable observation distribution could be assessed as an extension",
+      "reason": "These diagnostics do not establish that one specified spatial count model is optimal.",
+      "evidence": "Counts and overdispersion; no fitted spatial count-model comparison"
+    },
+    {
+      "id": "recorded_density",
+      "before": "(`r f(z25$recorded_per_km2)` per km^2^ of zone).",
+      "after": "(`r f(z25$recorded_per_km2)` recorded cases per km^2^ of zone). This is a descriptive ratio of sampled counts to zone area, not a complete estimate of the zone's observed case density.",
+      "reason": "Only selected sites have observed counts, and their catchments are unknown.",
+      "evidence": "30 supplied sites; zone membership and total 36 cases"
+    },
+    {
+      "id": "directory_operating",
+      "before": "but the current official directory lists all of them as operating [@onepa2026], so the flags were disregarded.",
+      "after": "but all five have official directory listings [@onepa2026] and were retained as candidates. Listings do not establish availability for an intervention, so operating status and capacity still require operator confirmation.",
+      "reason": "A directory listing is evidence of a listed venue, not confirmed present operational capacity.",
+      "evidence": "data/cache/facility_verification.csv; official onePA pages"
+    },
+    {
+      "id": "daytime_access",
+      "before": ", and is within reach of the daytime workforce around Marina Bay.",
+      "after": ".",
+      "reason": "No daytime population, walking routes or travel-time analysis supports this access claim.",
+      "evidence": "Only straight-line distances were evaluated"
+    },
+    {
+      "id": "substitute_suitability",
+      "before": "Either is a reasonable substitute if a proposed venue is unavailable.",
+      "after": "These are candidates for further assessment if a proposed venue is unavailable; route access, capacity and permission were not evaluated.",
+      "reason": "Similar distance objective values do not establish operational interchangeability.",
+      "evidence": "center_pair_ranking.csv; facility verification limitations"
+    },
+    {
+      "id": "variance_reliability",
+      "before": "provides a prediction variance that separates supported predictions from extrapolations.",
+      "after": "provides a conditional prediction variance under the fitted model. This variance does not itself classify locations as reliable or validate extrapolation.",
+      "reason": "A plug-in kriging variance does not establish geographic reliability.",
+      "evidence": "Zimmerman and Cressie 1992; outputs/audit/claim_numerics.json"
+    },
+    {
+      "id": "cv_reduction_scope",
+      "before": "Here it reduced cross-validated error by",
+      "after": "In this fixed-variogram comparison, its RMSE was lower by",
+      "reason": "The 19.7% reduction is descriptive and has no independently estimated generalization interval.",
+      "evidence": "selected and pure-nugget RMSE"
+    },
+    {
+      "id": "center_stability_scope",
+      "before": "and the same centers were chosen each time (@tbl-sensitivity).",
+      "after": "and the same centers were chosen in the five ordinary-kriging scenarios, including the selected model. The universal-kriging scenario instead chose Kampong Glam and MacPherson Community Clubs (@tbl-sensitivity).",
+      "reason": "Five ordinary scenarios agree; the sixth universal scenario differs.",
+      "evidence": "outputs/tables/sensitivity.csv"
+    },
+    {
+      "id": "fitting_failure_scope",
+      "before": "`r failed_n` of 180 settings failed to converge.",
+      "after": "`r failed_n` of 180 settings had a warning or singular fit from the sensible start.",
+      "reason": "The count classifies settings using their sensible start, not all 720 attempts.",
+      "evidence": "R/variograms.R; variogram_tuning.csv"
+    },
+    {
+      "id": "sample_size_heuristic",
+      "before": "Thirty sites is far below the 100 to 150 recommended for variogram estimation [@webster1992] and at the lower limit of 30 to 50 well-spread points below which a stable variogram is rarely obtained [@dickens2026].",
+      "after": "In soil-survey simulations, @webster1992 found that at least 100 observations were needed in the studied settings and that 150 could often be satisfactory for normally distributed isotropic variables. These are context-specific design results, not a universal minimum for these counts. The course also cautions about variogram stability below roughly 30 to 50 well-spread sites [@dickens2026].",
+      "reason": "The peer-reviewed numerical thresholds concern specific simulated soil fields, not a theorem for count data.",
+      "evidence": "Webster and Oliver 1992 publisher summary; course heuristic"
+    },
+    {
+      "id": "minimum_hotspot",
+      "before": "the surface cannot resolve hotspots smaller than a few kilometers,",
+      "after": "fine-scale hotspots are poorly informed by this sampling design; no minimum resolvable hotspot size was estimated,",
+      "reason": "Nugget ratio and median spacing alone do not establish a numerical resolution limit.",
+      "evidence": "38 pairs below 3 km; no resolution study"
+    },
+    {
+      "id": "counts_misspecification",
+      "before": "The model is also misspecified for counts. Ordinary kriging is a linear predictor that ignores the discreteness of counts and the dependence of their variance on the mean, and Gaussian assumptions enter its intervals and the simulations.",
+      "after": "Ordinary kriging does not explicitly model the discreteness of counts or a count-specific mean-variance relationship. Its linear-prediction equations do not require Gaussian observations, but Gaussian assumptions enter the intervals and simulations used here.",
+      "reason": "Non-Gaussian counts do not automatically invalidate best linear prediction under valid second moments.",
+      "evidence": "Zimmerman and Cressie 1992; Diggle et al. 1998"
+    },
+    {
+      "id": "sixfold_uncertainty",
+      "before": "Without denominators it cannot separate risk from the number of people present, and the unknown support of the counts changes outbreak densities about six-fold [@gotway2002].",
+      "after": "Without denominators it cannot separate risk from the number of people present. Conversion to cases per km^2^ also requires an unverified assumption about the area represented by each count [@gotway2002].",
+      "reason": "6.371 is the ratio between two chosen scenarios, not an estimated uncertainty magnitude.",
+      "evidence": "Exact hull land 191.135274/30; two illustrative catchments"
+    },
+    {
+      "id": "universal_fit_scope",
+      "before": "its residual variogram could only be fitted as a pure nugget",
+      "after": "the attempted spherical residual fit did not converge cleanly, so the implementation used a pure-nugget fallback",
+      "reason": "Only one spherical start/method was attempted; no exhaustive impossibility was established.",
+      "evidence": "R/sensitivity_helpers.R; R/sensitivity.R"
+    },
+    {
+      "id": "green_gradient",
+      "before": "Green space explains much of the gradient but cannot serve as a trend variable, because it is known only at the sites",
+      "after": "Green space is associated with the counts, but using it as an external-drift variable would require values at prediction locations; it is supplied only at the sites",
+      "reason": "No attributable fraction of the gradient was estimated; covariate values are unavailable outside the sites.",
+      "evidence": "data/raw/assignment2.csv; R/green_space.R"
+    },
+    {
+      "id": "isotropy_sampling",
+      "before": "Isotropy cannot be tested with so few pairs per direction, and if sites were chosen because of high counts, preferential sampling would bias both the mean and the variogram",
+      "after": "Directional variograms were not assessed, so isotropy remains an assumption. If site selection depended on case counts, ignoring that sampling process could bias spatial inference",
+      "reason": "No directional power test was done; preferential sampling can bias inference but need not always bias both named summaries.",
+      "evidence": "No directional-variogram analysis; Diggle et al. 2010"
+    },
+    {
+      "id": "green_barrier",
+      "before": "The observed negative association is consistent with green space as a barrier. Greener areas have fewer residents, workers and buildings, so contact rates for person-to-person transmission are lower.",
+      "after": "The negative association does not identify a protective effect of vegetation. Differences in resident and daytime population or urban form could instead produce fewer recorded cases at greener sites; these quantities and contact rates were not measured.",
+      "reason": "Population density and contact-rate differences are hypotheses rather than measured mechanisms in these data.",
+      "evidence": "Missing population and transmission data"
+    },
+    {
+      "id": "dengue_scope",
+      "before": "For dengue, transmission in Singapore is urban: *Aedes aegypti* breeds mainly in domestic containers [@ooi2006] and in outdoor drains, and incidence is highest in low-rise housing, where drainage networks are densest [@seidahmed2018].",
+      "after": "Singapore dengue studies have documented domestic-container breeding [@ooi2006] and greater incidence in low-rise housing associated with denser drainage networks in the studied setting [@seidahmed2018]. These examples concern dengue and cannot identify the unnamed illness or its transmission mechanism here.",
+      "reason": "Historical disease-specific findings do not establish a current universal ranking or identify this illness.",
+      "evidence": "Ooi et al. 2006 full text; Seidahmed et al. 2018 full text"
+    },
+    {
+      "id": "health_mechanism",
+      "before": "Green space is also associated with better general health and lower physiological stress [@twohig2018], which could reduce susceptibility or severity.",
+      "after": "Reported associations between green-space exposure, general health and stress markers [@twohig2018] do not establish reduced susceptibility to this illness.",
+      "reason": "The cited general-health review does not establish infection-specific susceptibility or severity.",
+      "evidence": "Twohig-Bennett and Jones 2018 review"
+    },
+    {
+      "id": "leptospirosis_scope",
+      "before": "leptospirosis is sustained by rodent reservoirs, contaminated soil and water, and recreational exposure",
+      "after": "leptospirosis can involve rodent reservoirs and exposure to contaminated soil or water, including during outdoor recreation",
+      "reason": "Exposure routes should not be conflated with reservoir maintenance.",
+      "evidence": "Bharti et al. 2003 review"
+    },
+    {
+      "id": "mechanism_sign",
+      "before": "These mechanisms could produce a positive association.",
+      "after": "These are plausible disease-specific pathways, not evidence that vegetation increased transmission in this dataset.",
+      "reason": "Specific vector/reservoir pathways do not establish the net sign of an ecological association.",
+      "evidence": "Unnamed illness; no vector or reservoir measurements"
+    },
+    {
+      "id": "confounding_comparison",
+      "before": "A more parsimonious explanation is confounding by urban form.",
+      "after": "Confounding by urban form is another plausible explanation; competing mechanisms were not compared.",
+      "reason": "No fitted comparison establishes relative parsimony or explanatory priority.",
+      "evidence": "No measured urban-form covariates"
+    },
+    {
+      "id": "sixfold_data",
+      "before": "Information on the area or population each count represents would also fix the conversion to cases per km^2^, which currently varies six-fold.",
+      "after": "Information on the area represented by each count is also needed to justify conversion to cases per km^2^; population denominators address a different quantity, cases per person.",
+      "reason": "Population alone does not identify area support, and six-fold uncertainty was not estimated.",
+      "evidence": "Dimensional distinction between counts/area and counts/population"
+    },
+    {
+      "id": "design_guarantee",
+      "before": "A denser design of about 100 to 150 sites [@webster1992], including pairs less than 1 km apart and sites in the unsampled regions, would stabilize the variogram and remove most of the extrapolation.",
+      "after": "A larger, more evenly distributed design, including pairs less than 1 km apart and sites in unsampled regions, could improve variogram estimation and reduce extrapolation. The 100 to 150 observations discussed by @webster1992 provide context from soil-survey simulations, not a guarantee of stability for this setting.",
+      "reason": "A numerical target cannot guarantee stability or geographic coverage without a design.",
+      "evidence": "Webster and Oliver 1992; observed coverage"
+    },
+    {
+      "id": "conclusion_precision",
+      "before": "With 30 sites, spatial correlation could be estimated only under carefully chosen settings, and most automated fits failed.",
+      "after": "With 30 sites, only five of the 180 tested settings met the specified variogram stability criteria.",
+      "reason": "Reported fitting behavior does not demonstrate that other defensible methods cannot estimate correlation.",
+      "evidence": "variogram_tuning.csv"
+    },
+    {
+      "id": "conclusion_cv",
+      "before": "converged and improved cross-validated prediction over a no-correlation model, with standardized error SD near one.",
+      "after": "converged and had lower fixed-variogram leave-one-out RMSE than a no-correlation model, with standardized error SD near one; independent predictive accuracy remains unestablished.",
+      "reason": "Selection and variance fitting reused all sites, so conclusions should not imply independent validation.",
+      "evidence": "R/variograms.R; R/variogram_helpers.R"
+    },
+    {
+      "id": "conclusion_venues",
+      "before": "are accessible, well-placed venues for temporary intervention centers.",
+      "after": "met the specified proximity criteria and minimized the modeled distance objective among the shortlisted pairs; operational suitability remains unverified.",
+      "reason": "Straight-line geometric criteria do not establish walking access, capacity or practical suitability.",
+      "evidence": "facility objective; no route/operator study"
+    },
+    {
+      "id": "readme_six_scenarios",
+      "before": "The same two centers were selected in all six sensitivity scenarios.",
+      "after": "The same two centers were selected in the five ordinary-kriging scenarios, including the selected model. The universal-kriging scenario selected Kampong Glam and MacPherson Community Clubs instead.",
+      "reason": "The sixth, universal-kriging scenario selects a different pair.",
+      "evidence": "outputs/tables/sensitivity.csv"
+    },
+    {
+      "id": "followup_1",
+      "before": "and a mean absolute error of `r f(sel$mae, 3)` against `r f(r$control_cv$mae, 3)` for the control; the exponential model had a slightly lower MAE (`r f(min(cands$mae), 3)`), with a mean z-score",
+      "after": "and a mean absolute error of `r f(sel$mae, 3)` against `r f(r$control_cv$mae, 3)` for the control, with a mean z-score",
+      "reason": "Keep the z-score diagnostics attached to the selected spherical model.",
+      "evidence": "report.qmd; R/green_space.R; outputs/audit/claim_numerics.json"
+    },
+    {
+      "id": "followup_2",
+      "before": "(@tbl-cv). No positive spatial autocorrelation",
+      "after": "(@tbl-cv). The exponential model had a slightly lower MAE (`r f(min(cands$mae), 3)`). No positive spatial autocorrelation",
+      "reason": "The lowest MAE is exponential, separately from selected spherical z-scores.",
+      "evidence": "report.qmd; R/green_space.R; outputs/audit/claim_numerics.json"
+    },
+    {
+      "id": "followup_3",
+      "before": "The intercept lies outside the observed range of green space and has no substantive meaning.",
+      "after": "The intercept corresponds to extrapolation to 0% green cover, outside the observed range, and should not be interpreted as a validated count prediction.",
+      "reason": "An extrapolated model intercept is not a validated count prediction.",
+      "evidence": "report.qmd; R/green_space.R; outputs/audit/claim_numerics.json"
+    },
+    {
+      "id": "followup_4",
+      "before": "and the shortest distance band that leaves no site without a neighbor.",
+      "after": "and a distance band set 0.1% above the largest nearest-neighbor distance to avoid isolated sites.",
+      "reason": "The implementation multiplies the maximum nearest-neighbor distance by 1.001.",
+      "evidence": "report.qmd; R/green_space.R; outputs/audit/claim_numerics.json"
+    },
+    {
+      "id": "followup_5",
+      "before": "The shortest distance band that leaves no site without a neighbor was `r f(r$band_km, 2)` km.",
+      "after": "The distance band used to avoid isolated sites was `r f(r$band_km, 2)` km, the largest nearest-neighbor distance multiplied by 1.001.",
+      "reason": "The exact minimum differs from the implemented buffered cutoff.",
+      "evidence": "report.qmd; R/green_space.R; outputs/audit/claim_numerics.json"
+    },
+    {
+      "id": "followup_6",
+      "before": "both inside the zone and within 300 m of an MRT exit",
+      "after": "both inside the zone and within 300 m straight-line distance of an MRT exit",
+      "reason": "These are geometric distances, not measured walking distances.",
+      "evidence": "report.qmd; R/green_space.R; outputs/audit/claim_numerics.json"
+    },
+    {
+      "id": "followup_7",
+      "before": "Green cover is lowest in this zone,",
+      "after": "This zone includes the sites with the lowest green cover,",
+      "reason": "Green cover is observed at sites, not throughout the zone.",
+      "evidence": "report.qmd; R/green_space.R; outputs/audit/claim_numerics.json"
+    },
+    {
+      "id": "followup_8",
+      "before": "so no width below 3 km meets the 30-pair rule",
+      "after": "so no tested width below 3 km meets the 30-pair rule",
+      "reason": "The discrete search does not establish all possible bin widths.",
+      "evidence": "report.qmd; R/green_space.R; outputs/audit/claim_numerics.json"
+    },
+    {
+      "id": "followup_9",
+      "before": "With 3 km bins, a 9 km cutoff leaves three bins, too few for a three-parameter model,",
+      "after": "With 3 km bins, a 9 km cutoff leaves only three bins for three parameters and fails the prespecified requirement for more bins than parameters,",
+      "reason": "This is a conservative screening criterion, not an impossibility of mathematical fitting.",
+      "evidence": "report.qmd; R/green_space.R; outputs/audit/claim_numerics.json"
+    },
+    {
+      "id": "followup_10",
+      "before": "provided the z-score SD lay between 0.8 and 1.2",
+      "after": "provided the z-score SD was greater than 0.8 and less than 1.2",
+      "reason": "The implemented inequalities are strict.",
+      "evidence": "report.qmd; R/green_space.R; outputs/audit/claim_numerics.json"
+    },
+    {
+      "id": "followup_11",
+      "before": "Without a denominator, the ratio compares expected counts at sites, not incidence rates.",
+      "after": "Without a denominator, the ratio compares expected counts at sites, not incidence rates. These model-based intervals do not account for any remaining spatial dependence.",
+      "reason": "Poisson and quasi-Poisson coefficient intervals do not use a spatial covariance model.",
+      "evidence": "report.qmd; R/green_space.R; outputs/audit/claim_numerics.json"
+    },
+    {
+      "id": "support_1",
+      "before": "beyond which counts are uncorrelated;",
+      "after": "beyond which the modeled covariance is zero;",
+      "reason": "The fitted range concerns assumed covariance, not an empirical independence boundary.",
+      "evidence": "report.qmd; R/kriging.R; R/sensitivity.R; Gotway and Young 2002; Cambardella et al. 1994"
+    },
+    {
+      "id": "support_2",
+      "before": "The nugget-to-sill ratio summarizes the strength of spatial dependence, conventionally classed as strong below 0.25, moderate from 0.25 to 0.75 and weak above 0.75 [@cambardella1994].",
+      "after": "The nugget-to-sill ratio was described using the soil-variability classification of @cambardella1994: strong below 0.25, moderate from 0.25 to 0.75 and weak above 0.75. This is a descriptive convention, not a test of predictive reliability.",
+      "reason": "The numerical classification originates in soil-property analysis.",
+      "evidence": "report.qmd; R/kriging.R; R/sensitivity.R; Gotway and Young 2002; Cambardella et al. 1994"
+    },
+    {
+      "id": "support_3",
+      "before": "The true catchment is unknown and could be smaller or larger than either value.",
+      "after": "These are simple rescaling scenarios, not a change-of-support model fitted to measured catchments, and they do not bound true outbreak size. The true catchment is unknown and could be smaller or larger than either value.",
+      "reason": "The scenarios assume uniform support; true site supports and event aggregation are unknown.",
+      "evidence": "report.qmd; R/kriging.R; R/sensitivity.R; Gotway and Young 2002; Cambardella et al. 1994"
+    },
+    {
+      "id": "support_4",
+      "before": "High-risk squares were those in the sampled area",
+      "after": "Here, high risk denotes higher predicted counts under the model, not higher incidence per person. High-risk squares were those in the sampled area",
+      "reason": "Counts do not identify per-person risk; the term is an operational relative-count label.",
+      "evidence": "report.qmd; R/kriging.R; R/sensitivity.R; Gotway and Young 2002; Cambardella et al. 1994"
+    },
+    {
+      "id": "support_5",
+      "before": "and averaged over 200 conditional simulations of 1 km² block means and of point values.",
+      "after": "and averaged over 200 conditional simulations of land-lattice means in nominal 1 km² cells and of point values.",
+      "reason": "Coastal cells have less than 1 km2 of land and averaging is over discrete land points.",
+      "evidence": "report.qmd; R/kriging.R; R/sensitivity.R; Gotway and Young 2002; Cambardella et al. 1994"
+    },
+    {
+      "id": "support_6",
+      "before": "`Simulated 1 km² blocks` = pct(block_simulations, 1)",
+      "after": "`Simulated cell means` = pct(block_simulations, 1)",
+      "reason": "The simulated averages use variable land portions, rather than full rectangular blocks.",
+      "evidence": "report.qmd; R/kriging.R; R/sensitivity.R; Gotway and Young 2002; Cambardella et al. 1994"
+    },
+    {
+      "id": "support_7",
+      "before": "the nugget variation that averages out within a square.",
+      "after": "the nugget variation that is reduced by averaging at multiple points.",
+      "reason": "Finite lattice averaging reduces rather than completely eliminates independent nugget noise.",
+      "evidence": "report.qmd; R/kriging.R; R/sensitivity.R; Gotway and Young 2002; Cambardella et al. 1994"
+    },
+    {
+      "id": "support_8",
+      "before": "Squares outside it are faded because their values are extrapolations.",
+      "after": "Squares without hull overlap are faded because their prediction points lie outside the sampled domain.",
+      "reason": "The visual mask is based on cell overlap, not strict point membership in the hull.",
+      "evidence": "report.qmd; R/kriging.R; R/sensitivity.R; Gotway and Young 2002; Cambardella et al. 1994"
+    },
+    {
+      "id": "support_9",
+      "before": "The same pair was selected under every alternative variogram model and without site 25",
+      "after": "The same pair was selected under the tested alternative ordinary-kriging variograms and without site 25",
+      "reason": "Only the enumerated sensitivity scenarios were evaluated.",
+      "evidence": "report.qmd; R/kriging.R; R/sensitivity.R; Gotway and Young 2002; Cambardella et al. 1994"
+    },
+    {
+      "id": "support_10",
+      "before": "consistent across alternative variograms,",
+      "after": "consistent across the tested alternative ordinary-kriging variograms,",
+      "reason": "The statement is limited to the examined scenarios and excludes the universal-kriging result.",
+      "evidence": "report.qmd; R/kriging.R; R/sensitivity.R; Gotway and Young 2002; Cambardella et al. 1994"
+    }
+  ],
+  "scope": "Scientific claims in report prose, numerical summaries, and README interpretation.",
+  "analysis_outputs_changed": false,
+  "limitations": "Correct arithmetic and conditional model fit do not establish causal attribution, independent validation, or operational suitability.",
+  "source_table_verification": {
+    "numeric_cells_checked": 210,
+    "exact_match": true,
+    "csv_sha256": "271e4c6b5c40a80c82089f3adca531859cc1c54bcb2093ff90539521fba01dde",
+    "assessment_pdf_sha256": "841dea96a4be6a747653e05e1278a17e1fc450709548dff9d3b267458e60a11a",
+    "method": "Extracted all 30 rows and seven numerical columns from the supplied assessment PDF and compared with the CSV."
+  },
+  "primary_claim_sources": [
+    {
+      "topic": "Spatial support and aggregation",
+      "doi": "10.1198/016214502760047140",
+      "access": "Full journal paper accessed; Section 3.1 checked",
+      "url": "https://www.researchgate.net/profile/Linda-Young-13/publication/4745466_Combining_Incompatible_Spatial_Data/links/58c3f85745851538eb868f3b/Combining-Incompatible-Spatial-Data.pdf"
+    },
+    {
+      "topic": "Kriging with estimated covariance parameters",
+      "doi": "10.1007/BF00048668",
+      "access": "Full journal paper accessed; Sections 1 and 2 checked",
+      "url": "https://www.ism.ac.jp/editsec/aism/pdf/044_1_0027.pdf"
+    },
+    {
+      "topic": "Variogram sample-size heuristic",
+      "doi": "10.1111/j.1365-2389.1992.tb00128.x",
+      "access": "Publisher summary; not full paper",
+      "url": "https://bsssjournals.onlinelibrary.wiley.com/doi/10.1111/j.1365-2389.1992.tb00128.x"
+    },
+    {
+      "topic": "Validation distance and sampling domain",
+      "doi": "10.1111/2041-210X.13851",
+      "access": "Full publisher article read during range investigation; application here is to validation-domain mismatch, not a claimed kriging benchmark",
+      "url": "https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13851"
+    },
+    {
+      "topic": "Dengue and housing",
+      "doi": "10.1002/2017GH000080",
+      "access": "Full publisher article",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2017GH000080"
+    },
+    {
+      "topic": "Dengue/vector-control context",
+      "doi": "10.3201/eid1206.051210",
+      "access": "Full journal article",
+      "url": "https://wwwnc.cdc.gov/eid/article/12/6/05-1210_article"
+    }
+  ],
+  "concurrent_edits_preserved": "A separate session added mean/intercept and block-support explanations during the claim review. These additions were checked and preserved in both reports."
+}

@@ -12,7 +12,7 @@ The supplied dataset contains 30 locations, 56 cases in total, and a green-space
 
 The disease, observation period, population at risk, and area represented by each site's count are unspecified. The green-space buffer size and definition are also unspecified. Consequently, the analysis estimates **case counts rather than incidence rates**, despite the repository name. A lower count may reflect fewer people at risk rather than a lower individual disease risk.
 
-Three government spatial datasets provide administrative land boundaries, community-club locations, and train-station exits. Community clubs are considered potential venues for temporary intervention centers. Their operating status and accessibility were checked against the official directory. Input files, field definitions, dataset links, and dated verification notes are documented in [data/README.md](data/README.md).
+Three government spatial datasets provide administrative land boundaries, community-club locations, and train-station exits. Community clubs are considered potential venues for temporary intervention centers. Their addresses and listed accessibility were checked against the official directory; availability for an intervention still requires operator confirmation. Input files, field definitions, dataset links, and dated verification notes are documented in [data/README.md](data/README.md).
 
 ## Analysis
 
@@ -36,7 +36,7 @@ Full equations, figures, references, and interpretation are in the [PDF report](
 | Green-space association | Expected-count ratio 0.73 per 10-percentage-point increase in green cover, with a profile-likelihood 95% confidence interval of 0.59 to 0.89. Positive residual spatial autocorrelation was not detected after this adjustment. |
 | Proposed centers | Braddell Heights and Kampong Glam Community Clubs minimize the weighted distance among 496 eligible pairs. The mean distance to the nearer center is 2.14 km. |
 
-The same two centers were selected in all six sensitivity scenarios. These results describe this dataset and the stated assumptions; they do not establish a transmission mechanism, a protective effect of green space, or the operational suitability of the venues.
+The same two centers were selected in the five ordinary-kriging scenarios, including the selected model. The universal-kriging scenario selected Kampong Glam and MacPherson Community Clubs instead. These results describe this dataset and the stated assumptions; they do not establish a transmission mechanism, a protective effect of green space, or the operational suitability of the venues.
 
 ![Ordinary-kriging case-count predictions and kriging variances across Singapore.](outputs/figures/fig06_kriging_maps.png)
 
@@ -86,6 +86,8 @@ The documents are written to `reports/`. Computed outputs are already included, 
 [`tests/check_outputs.R`](tests/check_outputs.R) independently verifies 63 scientific results, including all 1,017 kriging predictions and variances, empirical variogram summaries, cross-validation metrics, Poisson confidence limits, spatial statistics, zone totals, and all 496 center-pair scores. These checks recompute results through separate numerical routes rather than merely checking that output files exist.
 
 [`tests/check_reproduction.py`](tests/check_reproduction.py) compares all 14 CSV tables with SHA-256 hashes from the independently checked analysis before its code was reorganized into modules. Both the full modular pipeline and dependency restoration from a clean checkout have been verified. Exact table equality assumes the recorded package versions and numerical environment; different spatial libraries can affect geometry and floating-point results. Verification evidence is recorded in [`outputs/validation.json`](outputs/validation.json).
+
+The manuscript claim audit is reproducible with `Rscript scripts/audit_report_claims.R`. It evaluates every inline report expression and recomputes evidence for catchment scenarios, prediction domains, numerical rankings, simulations, and center sensitivity. [The audit outputs](outputs/audit/) also record the manual claim review and its sources. Numerical agreement does not establish causal attribution, independent predictive accuracy, or venue suitability.
 
 ## Code and file organization
 

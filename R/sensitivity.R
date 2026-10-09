@@ -18,8 +18,8 @@ analyze_sensitivity <- function(data, variograms, surface, facilities, config) {
   # model: cross-validation, overlap of the top-25% squares (Jaccard index), and
   # whether the same two centers are chosen.
 
-  # Refit with the sensible start; if no structured model converges, fit a pure
-  # nugget instead and say so (the structure was absorbed elsewhere).
+  # Attempt the structured fit from the specified start; if it is not clean, use
+  # a pure-nugget fallback. This does not establish absence of residual structure.
 
   cell_xy <- bind_cols(cell_pts, as.data.frame(st_coordinates(cell_pts))) |> rename(x = X, y = Y)
   no25 <- filter(obs, id != 25)

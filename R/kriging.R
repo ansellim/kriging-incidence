@@ -29,8 +29,8 @@ interpolate_counts <- function(data, variograms, config) {
   # inland squares); this is point support, not a block average.
   cell_pts <- st_sf(geometry = st_point_on_surface(st_geometry(cells)))
   hull <- st_convex_hull(st_union(obs))
-  # The sampled area is the convex hull of the sites; squares overlapping it are
-  # treated as supported by data, all others as extrapolation.
+  # The zone-analysis domain uses squares overlapping the sampled-site hull;
+  # this is a geometric convention, not a validated reliability boundary.
   cells$in_hull <- lengths(st_intersects(cells, hull)) > 0
   cells$nearest_site_km <- apply(units::drop_units(st_distance(cell_pts, obs)), 1, min) / 1000
 
@@ -39,7 +39,7 @@ interpolate_counts <- function(data, variograms, config) {
   cells$var <- ok$var1.var
 
   # High-risk zones: top 25% (and top 10%) of predicted values among squares in
-  # the sampled area, so that no zone rests on extrapolation (Exercise 60).
+  # the hull-overlap domain. Boundary prediction points may lie outside the hull.
   thresholds <- quantile(cells$pred[cells$in_hull], c(0.75, 0.90), names = FALSE)
   cells$risk_class <- case_when(cells$in_hull & cells$pred >= thresholds[2] ~ "Top 10%",
                                 cells$in_hull & cells$pred >= thresholds[1] ~ "Top 25%",

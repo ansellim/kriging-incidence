@@ -22,8 +22,8 @@ place_centers <- function(data, surface, config) {
   # p-median problem).
   # The 2024 dataset flags some clubs "(U/C)", "(Pending U/C)" or "(Pending
   # relocation)". The current official directory (checked 8 October 2026) lists
-  # the flagged clubs near the zone as operating, so the flags are treated as out
-  # of date and removed. The pre-2022 Thomson CC location and venues that are not
+  # the flagged clubs near the zone. Status tags are removed for name matching;
+  # listings do not confirm availability. The pre-2022 Thomson CC location and venues that are not
   # community clubs (sea sports clubs, imPAct@Hong Lim Green) are dropped.
   clubs <- read.csv(config$clubs_file) |>
     filter(!grepl("Till", name)) |>
